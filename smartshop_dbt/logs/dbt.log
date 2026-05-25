@@ -1,0 +1,1255 @@
+[0m03:16:29.192611 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e220110>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e2d5290>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e34ff10>]}
+
+
+============================== 03:16:29.196034 | ad92b10a-6ce6-4664-b175-711cc28de062 ==============================
+[0m03:16:29.196034 [info ] [MainThread]: Running with dbt=1.11.8
+[0m03:16:29.196299 [debug] [MainThread]: running dbt with arguments {'use_experimental_parser': 'False', 'invocation_command': 'dbt debug', 'profiles_dir': '/Users/prasadpatil/.dbt', 'target_path': 'None', 'partial_parse': 'True', 'quiet': 'False', 'log_cache_events': 'False', 'write_json': 'True', 'static_parser': 'True', 'debug': 'False', 'fail_fast': 'False', 'log_format': 'default', 'introspect': 'True', 'warn_error': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'version_check': 'True', 'printer_width': '80', 'no_print': 'None', 'send_anonymous_usage_stats': 'True', 'log_path': '/Users/prasadpatil/Downloads/Smartshop Analytical Platform/smartshop_dbt/logs', 'cache_selected_only': 'False', 'use_colors': 'True', 'empty': 'None', 'indirect_selection': 'eager'}
+[0m03:16:29.204456 [info ] [MainThread]: dbt version: 1.11.8
+[0m03:16:29.204633 [info ] [MainThread]: python version: 3.11.9
+[0m03:16:29.204774 [info ] [MainThread]: python path: /Users/prasadpatil/Downloads/Smartshop Analytical Platform/venv/bin/python3
+[0m03:16:29.204895 [info ] [MainThread]: os info: macOS-26.3.1-arm64-arm-64bit
+[0m03:16:29.620600 [debug] [MainThread]: Spark adapter: Setting pyhive.hive logging to ERROR
+[0m03:16:29.620842 [debug] [MainThread]: Spark adapter: Setting thrift.transport logging to ERROR
+[0m03:16:29.620974 [debug] [MainThread]: Spark adapter: Setting thrift.protocol logging to ERROR
+[0m03:16:39.066623 [info ] [MainThread]: Using profiles dir at /Users/prasadpatil/.dbt
+[0m03:16:39.066993 [info ] [MainThread]: Using profiles.yml file at /Users/prasadpatil/.dbt/profiles.yml
+[0m03:16:39.067155 [info ] [MainThread]: Using dbt_project.yml file at /Users/prasadpatil/Downloads/Smartshop Analytical Platform/smartshop_dbt/dbt_project.yml
+[0m03:16:39.067275 [info ] [MainThread]: adapter type: databricks
+[0m03:16:39.067387 [info ] [MainThread]: adapter version: 1.12.0
+[0m03:16:39.109298 [info ] [MainThread]: Configuration:
+[0m03:16:39.109554 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m03:16:39.109680 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m03:16:39.109793 [info ] [MainThread]: Required dependencies:
+[0m03:16:39.109973 [debug] [MainThread]: Executing "git --help"
+[0m03:16:39.197661 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Reset current HEAD to the specified state\n   switch     Switch branches\n   tag        Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m03:16:39.198205 [debug] [MainThread]: STDERR: "b''"
+[0m03:16:39.198371 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m03:16:39.198524 [info ] [MainThread]: Connection:
+[0m03:16:39.198710 [info ] [MainThread]:   host: dbc-d50823ca-98cf.cloud.databricks.com
+[0m03:16:39.198825 [info ] [MainThread]:   http_path: /sql/1.0/warehouses/f933b60ad38b2d38
+[0m03:16:39.198933 [info ] [MainThread]:   catalog: workspace
+[0m03:16:39.199037 [info ] [MainThread]:   schema: default
+[0m03:16:39.199368 [info ] [MainThread]: Registered adapter: databricks=1.12.0
+[0m03:16:39.457498 [debug] [MainThread]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=debug) - Creating connection
+[0m03:16:39.457750 [debug] [MainThread]: Acquiring new databricks connection 'debug'
+[0m03:16:39.457890 [debug] [MainThread]: Using databricks connection "debug"
+[0m03:16:39.458003 [debug] [MainThread]: On debug: select 1 as id
+[0m03:16:39.458109 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m03:16:40.106658 [debug] [MainThread]: Databricks adapter: Connection(session-id=01f15740-8234-15ca-b834-ba459c6e2fd6) - Created
+[0m03:17:00.716754 [debug] [MainThread]: SQL status: OK in 21.260 seconds
+[0m03:17:00.722805 [debug] [MainThread]: Databricks adapter: Cursor(session-id=01f15740-8234-15ca-b834-ba459c6e2fd6, command-id=01f15740-8258-1e64-9244-67df94cff6a0) - Closing
+[0m03:17:01.120598 [debug] [MainThread]: On debug: Close
+[0m03:17:01.121509 [debug] [MainThread]: Databricks adapter: Connection(session-id=01f15740-8234-15ca-b834-ba459c6e2fd6) - Closing
+[0m03:17:01.221523 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m03:17:01.222619 [info ] [MainThread]: [32mAll checks passed![0m
+[0m03:17:01.232222 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": true, "command_wall_clock_time": 32.079678, "process_in_blocks": "0", "process_kernel_time": 0.442268, "process_mem_max_rss": "231620608", "process_out_blocks": "0", "process_user_time": 1.701298}
+[0m03:17:01.233411 [debug] [MainThread]: Command `dbt debug` succeeded at 03:17:01.233152 after 32.08 seconds
+[0m03:17:01.234561 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e339f50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109dd2510>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x115ea5950>]}
+[0m03:17:01.235522 [debug] [MainThread]: Flushing usage events
+[0m03:17:01.419920 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m03:44:12.485417 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a405810>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a508410>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a508d50>]}
+
+
+============================== 03:44:12.487774 | 01dd8ca3-c267-4385-a363-82c70345ad6c ==============================
+[0m03:44:12.487774 [info ] [MainThread]: Running with dbt=1.11.8
+[0m03:44:12.488048 [debug] [MainThread]: running dbt with arguments {'introspect': 'True', 'use_colors': 'True', 'write_json': 'True', 'use_experimental_parser': 'False', 'partial_parse': 'True', 'quiet': 'False', 'fail_fast': 'False', 'log_path': '/Users/prasadpatil/Downloads/Smartshop Analytical Platform/smartshop_dbt/logs', 'profiles_dir': '/Users/prasadpatil/.dbt', 'static_parser': 'True', 'empty': 'False', 'cache_selected_only': 'False', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'debug': 'False', 'log_format': 'default', 'no_print': 'None', 'indirect_selection': 'eager', 'warn_error': 'None', 'send_anonymous_usage_stats': 'True', 'log_cache_events': 'False', 'version_check': 'True', 'invocation_command': 'dbt run', 'printer_width': '80'}
+[0m03:44:12.902243 [debug] [MainThread]: Spark adapter: Setting pyhive.hive logging to ERROR
+[0m03:44:12.902492 [debug] [MainThread]: Spark adapter: Setting thrift.transport logging to ERROR
+[0m03:44:12.902624 [debug] [MainThread]: Spark adapter: Setting thrift.protocol logging to ERROR
+[0m03:44:13.644039 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '01dd8ca3-c267-4385-a363-82c70345ad6c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10cc7b750>]}
+[0m03:44:13.706022 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '01dd8ca3-c267-4385-a363-82c70345ad6c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1095c2790>]}
+[0m03:44:13.706384 [info ] [MainThread]: Registered adapter: databricks=1.12.0
+[0m03:44:13.789391 [debug] [MainThread]: checksum: 7d524ac048c2100769df89d592e662e060a73ca564e31bd9c2a37efdfe8d8ab6, vars: {}, profile: , target: , version: 1.11.8
+[0m03:44:13.789725 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m03:44:13.789881 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '01dd8ca3-c267-4385-a363-82c70345ad6c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112491e50>]}
+[0m03:44:14.571797 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '01dd8ca3-c267-4385-a363-82c70345ad6c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112bde6d0>]}
+[0m03:44:14.616348 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/prasadpatil/Downloads/Smartshop Analytical Platform/smartshop_dbt/target/manifest.json
+[0m03:44:14.617671 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/prasadpatil/Downloads/Smartshop Analytical Platform/smartshop_dbt/target/semantic_manifest.json
+[0m03:44:14.624300 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '01dd8ca3-c267-4385-a363-82c70345ad6c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11287d710>]}
+[0m03:44:14.624496 [info ] [MainThread]: Found 6 models, 4 data tests, 758 macros
+[0m03:44:14.624630 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '01dd8ca3-c267-4385-a363-82c70345ad6c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10871a790>]}
+[0m03:44:14.625473 [info ] [MainThread]: 
+[0m03:44:14.625616 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m03:44:14.625724 [info ] [MainThread]: 
+[0m03:44:14.625956 [debug] [MainThread]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=master) - Creating connection
+[0m03:44:14.626078 [debug] [MainThread]: Acquiring new databricks connection 'master'
+[0m03:44:14.629006 [debug] [ThreadPool]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=list_workspace) - Creating connection
+[0m03:44:14.629158 [debug] [ThreadPool]: Acquiring new databricks connection 'list_workspace'
+[0m03:44:14.634156 [debug] [ThreadPool]: Using databricks connection "list_workspace"
+[0m03:44:14.634298 [debug] [ThreadPool]: On list_workspace: /* {"app": "dbt", "dbt_version": "1.11.8", "dbt_databricks_version": "1.12.0", "databricks_sql_connector_version": "4.1.5", "profile_name": "smartshop_dbt", "target_name": "dev", "invocation_id": "01dd8ca3-c267-4385-a363-82c70345ad6c", "connection_name": "list_workspace"} */
+
+    
+
+  SHOW SCHEMAS IN `workspace`
+
+
+  
+[0m03:44:14.634418 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m03:44:15.237141 [debug] [ThreadPool]: Databricks adapter: Connection(session-id=01f15744-5cb8-1b1b-a762-2a623c794f9d) - Created
+[0m03:44:34.245164 [debug] [ThreadPool]: SQL status: OK in 19.610 seconds
+[0m03:44:34.262433 [debug] [ThreadPool]: Databricks adapter: Cursor(session-id=01f15744-5cb8-1b1b-a762-2a623c794f9d, command-id=01f15744-5ce1-19da-9e9f-ac4eda403985) - Closing
+[0m03:44:34.443454 [debug] [ThreadPool]: On list_workspace: Close
+[0m03:44:34.444629 [debug] [ThreadPool]: Databricks adapter: Connection(session-id=01f15744-5cb8-1b1b-a762-2a623c794f9d) - Closing
+[0m03:44:34.547116 [debug] [ThreadPool]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=list_workspace_default) - Creating connection
+[0m03:44:34.547632 [debug] [ThreadPool]: Acquiring new databricks connection 'list_workspace_default'
+[0m03:44:34.557519 [debug] [ThreadPool]: Using databricks connection "list_workspace_default"
+[0m03:44:34.558174 [debug] [ThreadPool]: On list_workspace_default: /* {"app": "dbt", "dbt_version": "1.11.8", "dbt_databricks_version": "1.12.0", "databricks_sql_connector_version": "4.1.5", "profile_name": "smartshop_dbt", "target_name": "dev", "invocation_id": "01dd8ca3-c267-4385-a363-82c70345ad6c", "connection_name": "list_workspace_default"} */
+
+    
+SELECT
+  table_name,
+  if(table_type IN ('EXTERNAL', 'MANAGED', 'MANAGED_SHALLOW_CLONE', 'EXTERNAL_SHALLOW_CLONE'), 'table', lower(table_type)) AS table_type,
+  lower(data_source_format) AS file_format,
+  table_owner,
+  if(
+    table_type IN (
+      'EXTERNAL',
+      'MANAGED',
+      'MANAGED_SHALLOW_CLONE',
+      'EXTERNAL_SHALLOW_CLONE'
+    ),
+    lower(table_type),
+    NULL
+  ) AS databricks_table_type
+FROM `system`.`information_schema`.`tables`
+WHERE table_catalog = 'workspace'
+  AND table_schema = 'default'
+
+  
+[0m03:44:34.558451 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m03:44:34.820494 [debug] [ThreadPool]: Databricks adapter: Connection(session-id=01f15744-687e-184a-8c03-bcabed249703) - Created
+[0m03:44:42.200487 [debug] [ThreadPool]: SQL status: OK in 7.640 seconds
+[0m03:44:42.208830 [debug] [ThreadPool]: Databricks adapter: Cursor(session-id=01f15744-687e-184a-8c03-bcabed249703, command-id=01f15744-688d-17e3-a289-249c19681092) - Closing
+[0m03:44:42.210722 [debug] [ThreadPool]: On list_workspace_default: Close
+[0m03:44:42.210940 [debug] [ThreadPool]: Databricks adapter: Connection(session-id=01f15744-687e-184a-8c03-bcabed249703) - Closing
+[0m03:44:42.309559 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '01dd8ca3-c267-4385-a363-82c70345ad6c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112b068d0>]}
+[0m03:44:42.316276 [debug] [Thread-3 (]: Began running node model.smartshop_dbt.customer_analytics
+[0m03:44:42.317635 [info ] [Thread-3 (]: 1 of 6 START sql view model default.customer_analytics ......................... [RUN]
+[0m03:44:42.319244 [debug] [Thread-3 (]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=model.smartshop_dbt.customer_analytics) - Creating connection
+[0m03:44:42.319897 [debug] [Thread-3 (]: Acquiring new databricks connection 'model.smartshop_dbt.customer_analytics'
+[0m03:44:42.320292 [debug] [Thread-3 (]: Began compiling node model.smartshop_dbt.customer_analytics
+[0m03:44:42.328920 [debug] [Thread-3 (]: Writing injected SQL for node "model.smartshop_dbt.customer_analytics"
+[0m03:44:42.330018 [debug] [Thread-3 (]: Began executing node model.smartshop_dbt.customer_analytics
+[0m03:44:42.340918 [debug] [Thread-3 (]: MATERIALIZING VIEW
+[0m03:44:42.353151 [debug] [Thread-3 (]: Creating view `workspace`.`default`.`customer_analytics`
+[0m03:44:42.359740 [debug] [Thread-3 (]: Writing runtime sql for node "model.smartshop_dbt.customer_analytics"
+[0m03:44:42.360588 [debug] [Thread-3 (]: Using databricks connection "model.smartshop_dbt.customer_analytics"
+[0m03:44:42.360862 [debug] [Thread-3 (]: On model.smartshop_dbt.customer_analytics: /* {"app": "dbt", "dbt_version": "1.11.8", "dbt_databricks_version": "1.12.0", "databricks_sql_connector_version": "4.1.5", "profile_name": "smartshop_dbt", "target_name": "dev", "invocation_id": "01dd8ca3-c267-4385-a363-82c70345ad6c", "node_id": "model.smartshop_dbt.customer_analytics"} */
+
+  
+  
+  
+  create or replace view `workspace`.`default`.`customer_analytics`
+  
+  as (
+    with orders as (
+    select * from workspace.default.olist_orders_dataset
+),
+payments as (
+    select * from workspace.default.olist_order_payments_dataset
+),
+customers as (
+    select * from workspace.default.olist_customers_dataset
+)
+
+select
+    c.customer_state                        as state,
+    count(distinct c.customer_id)           as total_customers,
+    count(distinct o.order_id)              as total_orders,
+    round(sum(p.payment_value), 2)          as total_revenue,
+    round(avg(p.payment_value), 2)          as avg_order_value
+from customers c
+join orders o on c.customer_id = o.customer_id
+join payments p on o.order_id = p.order_id
+where o.order_status = 'delivered'
+group by c.customer_state
+order by total_revenue desc
+  )
+
+[0m03:44:42.361084 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m03:44:42.653342 [debug] [Thread-3 (]: Databricks adapter: Connection(session-id=01f15744-6d27-1ea8-8f92-89346e05456a) - Created
+[0m03:44:46.577583 [debug] [Thread-3 (]: SQL status: OK in 4.220 seconds
+[0m03:44:46.579932 [debug] [Thread-3 (]: Databricks adapter: Cursor(session-id=01f15744-6d27-1ea8-8f92-89346e05456a, command-id=01f15744-6d39-1858-9a61-ce0772a701b9) - Closing
+[0m03:44:46.596009 [debug] [Thread-3 (]: Applying tags to relation None
+[0m03:44:46.600273 [debug] [Thread-3 (]: On model.smartshop_dbt.customer_analytics: Close
+[0m03:44:46.600640 [debug] [Thread-3 (]: Databricks adapter: Connection(session-id=01f15744-6d27-1ea8-8f92-89346e05456a) - Closing
+[0m03:44:46.707695 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '01dd8ca3-c267-4385-a363-82c70345ad6c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1129f7150>]}
+[0m03:44:46.709096 [info ] [Thread-3 (]: 1 of 6 OK created sql view model default.customer_analytics .................... [[32mOK[0m in 4.38s]
+[0m03:44:46.710006 [debug] [Thread-3 (]: Finished running node model.smartshop_dbt.customer_analytics
+[0m03:44:46.710586 [debug] [Thread-3 (]: Began running node model.smartshop_dbt.daily_revenue
+[0m03:44:46.711535 [info ] [Thread-3 (]: 2 of 6 START sql view model default.daily_revenue .............................. [RUN]
+[0m03:44:46.712363 [debug] [Thread-3 (]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=model.smartshop_dbt.daily_revenue) - Creating connection
+[0m03:44:46.712809 [debug] [Thread-3 (]: Acquiring new databricks connection 'model.smartshop_dbt.daily_revenue'
+[0m03:44:46.713212 [debug] [Thread-3 (]: Began compiling node model.smartshop_dbt.daily_revenue
+[0m03:44:46.717375 [debug] [Thread-3 (]: Writing injected SQL for node "model.smartshop_dbt.daily_revenue"
+[0m03:44:46.718381 [debug] [Thread-3 (]: Began executing node model.smartshop_dbt.daily_revenue
+[0m03:44:46.721141 [debug] [Thread-3 (]: MATERIALIZING VIEW
+[0m03:44:46.722401 [debug] [Thread-3 (]: Creating view `workspace`.`default`.`daily_revenue`
+[0m03:44:46.723231 [debug] [Thread-3 (]: Writing runtime sql for node "model.smartshop_dbt.daily_revenue"
+[0m03:44:46.723848 [debug] [Thread-3 (]: Using databricks connection "model.smartshop_dbt.daily_revenue"
+[0m03:44:46.724268 [debug] [Thread-3 (]: On model.smartshop_dbt.daily_revenue: /* {"app": "dbt", "dbt_version": "1.11.8", "dbt_databricks_version": "1.12.0", "databricks_sql_connector_version": "4.1.5", "profile_name": "smartshop_dbt", "target_name": "dev", "invocation_id": "01dd8ca3-c267-4385-a363-82c70345ad6c", "node_id": "model.smartshop_dbt.daily_revenue"} */
+
+  
+  
+  
+  create or replace view `workspace`.`default`.`daily_revenue`
+  
+  as (
+    with orders as (
+    select * from workspace.default.olist_orders_dataset
+),
+payments as (
+    select * from workspace.default.olist_order_payments_dataset
+)
+
+select
+    date(o.order_purchase_timestamp) as order_date,
+    count(distinct o.order_id)       as total_orders,
+    round(sum(p.payment_value), 2)   as total_revenue,
+    round(avg(p.payment_value), 2)   as avg_order_value
+from orders o
+join payments p on o.order_id = p.order_id
+where o.order_status = 'delivered'
+group by date(o.order_purchase_timestamp)
+order by order_date
+  )
+
+[0m03:44:46.724626 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m03:44:46.975394 [debug] [Thread-3 (]: Databricks adapter: Connection(session-id=01f15744-6fbe-1781-8956-af774b82c97f) - Created
+[0m03:44:48.325314 [debug] [Thread-3 (]: SQL status: OK in 1.600 seconds
+[0m03:44:48.327317 [debug] [Thread-3 (]: Databricks adapter: Cursor(session-id=01f15744-6fbe-1781-8956-af774b82c97f, command-id=01f15744-6fcb-1e88-a931-745b56c1dd2b) - Closing
+[0m03:44:48.328588 [debug] [Thread-3 (]: Applying tags to relation None
+[0m03:44:48.329782 [debug] [Thread-3 (]: On model.smartshop_dbt.daily_revenue: Close
+[0m03:44:48.330257 [debug] [Thread-3 (]: Databricks adapter: Connection(session-id=01f15744-6fbe-1781-8956-af774b82c97f) - Closing
+[0m03:44:48.430057 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '01dd8ca3-c267-4385-a363-82c70345ad6c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112c3b510>]}
+[0m03:44:48.431953 [info ] [Thread-3 (]: 2 of 6 OK created sql view model default.daily_revenue ......................... [[32mOK[0m in 1.72s]
+[0m03:44:48.433058 [debug] [Thread-3 (]: Finished running node model.smartshop_dbt.daily_revenue
+[0m03:44:48.433513 [debug] [Thread-3 (]: Began running node model.smartshop_dbt.my_first_dbt_model
+[0m03:44:48.434099 [info ] [Thread-3 (]: 3 of 6 START sql table model default.my_first_dbt_model ........................ [RUN]
+[0m03:44:48.434748 [debug] [Thread-3 (]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=model.smartshop_dbt.my_first_dbt_model) - Creating connection
+[0m03:44:48.435097 [debug] [Thread-3 (]: Acquiring new databricks connection 'model.smartshop_dbt.my_first_dbt_model'
+[0m03:44:48.435410 [debug] [Thread-3 (]: Began compiling node model.smartshop_dbt.my_first_dbt_model
+[0m03:44:48.440963 [debug] [Thread-3 (]: Writing injected SQL for node "model.smartshop_dbt.my_first_dbt_model"
+[0m03:44:48.441969 [debug] [Thread-3 (]: Began executing node model.smartshop_dbt.my_first_dbt_model
+[0m03:44:48.460088 [debug] [Thread-3 (]: MATERIALIZING TABLE
+[0m03:44:48.478158 [debug] [Thread-3 (]: Using databricks connection "model.smartshop_dbt.my_first_dbt_model"
+[0m03:44:48.478509 [debug] [Thread-3 (]: On model.smartshop_dbt.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "1.11.8", "dbt_databricks_version": "1.12.0", "databricks_sql_connector_version": "4.1.5", "profile_name": "smartshop_dbt", "target_name": "dev", "invocation_id": "01dd8ca3-c267-4385-a363-82c70345ad6c", "node_id": "model.smartshop_dbt.my_first_dbt_model"} */
+SELECT
+    table_catalog,
+    table_schema,
+    table_name,
+    filter_name,
+    target_columns
+  FROM `workspace`.`information_schema`.`row_filters`
+  WHERE table_catalog = 'workspace'
+    AND table_schema = 'default'
+    AND table_name = 'my_first_dbt_model'
+[0m03:44:48.478726 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m03:44:48.704354 [debug] [Thread-3 (]: Databricks adapter: Connection(session-id=01f15744-70c8-16ea-a5b1-8e07270c4855) - Created
+[0m03:44:49.953429 [debug] [Thread-3 (]: SQL status: OK in 1.470 seconds
+[0m03:44:49.957549 [debug] [Thread-3 (]: Databricks adapter: Cursor(session-id=01f15744-70c8-16ea-a5b1-8e07270c4855, command-id=01f15744-70d4-115a-a23c-4a041c14f23d) - Closing
+[0m03:44:49.970748 [debug] [Thread-3 (]: Writing runtime sql for node "model.smartshop_dbt.my_first_dbt_model"
+[0m03:44:49.971715 [debug] [Thread-3 (]: Using databricks connection "model.smartshop_dbt.my_first_dbt_model"
+[0m03:44:49.972033 [debug] [Thread-3 (]: On model.smartshop_dbt.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "1.11.8", "dbt_databricks_version": "1.12.0", "databricks_sql_connector_version": "4.1.5", "profile_name": "smartshop_dbt", "target_name": "dev", "invocation_id": "01dd8ca3-c267-4385-a363-82c70345ad6c", "node_id": "model.smartshop_dbt.my_first_dbt_model"} */
+
+  
+    
+        create or replace table `workspace`.`default`.`my_first_dbt_model`
+      
+      
+    using delta
+  
+      
+      
+      
+      
+      
+      
+      
+      
+      as
+      /*
+    Welcome to your first dbt model!
+    Did you know that you can also configure models directly within SQL files?
+    This will override configurations stated in dbt_project.yml
+
+    Try changing "table" to "view" below
+*/
+
+
+
+with source_data as (
+
+    select 1 as id
+    union all
+    select null as id
+
+)
+
+select *
+from source_data
+
+/*
+    Uncomment the line below to remove records with null `id` values
+*/
+
+-- where id is not null
+  
+[0m03:45:05.100198 [debug] [Thread-3 (]: SQL status: OK in 15.130 seconds
+[0m03:45:05.105658 [debug] [Thread-3 (]: Databricks adapter: Cursor(session-id=01f15744-70c8-16ea-a5b1-8e07270c4855, command-id=01f15744-7195-1d80-9528-74321c5cf7c4) - Closing
+[0m03:45:05.233182 [debug] [Thread-3 (]: Applying tags to relation None
+[0m03:45:05.261654 [debug] [Thread-3 (]: On model.smartshop_dbt.my_first_dbt_model: Close
+[0m03:45:05.262193 [debug] [Thread-3 (]: Databricks adapter: Connection(session-id=01f15744-70c8-16ea-a5b1-8e07270c4855) - Closing
+[0m03:45:05.387429 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '01dd8ca3-c267-4385-a363-82c70345ad6c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112dd2050>]}
+[0m03:45:05.389280 [info ] [Thread-3 (]: 3 of 6 OK created sql table model default.my_first_dbt_model ................... [[32mOK[0m in 16.95s]
+[0m03:45:05.390251 [debug] [Thread-3 (]: Finished running node model.smartshop_dbt.my_first_dbt_model
+[0m03:45:05.390957 [debug] [Thread-3 (]: Began running node model.smartshop_dbt.order_status_summary
+[0m03:45:05.392540 [info ] [Thread-3 (]: 4 of 6 START sql view model default.order_status_summary ....................... [RUN]
+[0m03:45:05.393446 [debug] [Thread-3 (]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=model.smartshop_dbt.order_status_summary) - Creating connection
+[0m03:45:05.393830 [debug] [Thread-3 (]: Acquiring new databricks connection 'model.smartshop_dbt.order_status_summary'
+[0m03:45:05.394224 [debug] [Thread-3 (]: Began compiling node model.smartshop_dbt.order_status_summary
+[0m03:45:05.405346 [debug] [Thread-3 (]: Writing injected SQL for node "model.smartshop_dbt.order_status_summary"
+[0m03:45:05.406407 [debug] [Thread-3 (]: Began executing node model.smartshop_dbt.order_status_summary
+[0m03:45:05.408951 [debug] [Thread-3 (]: MATERIALIZING VIEW
+[0m03:45:05.410080 [debug] [Thread-3 (]: Creating view `workspace`.`default`.`order_status_summary`
+[0m03:45:05.410771 [debug] [Thread-3 (]: Writing runtime sql for node "model.smartshop_dbt.order_status_summary"
+[0m03:45:05.411286 [debug] [Thread-3 (]: Using databricks connection "model.smartshop_dbt.order_status_summary"
+[0m03:45:05.411585 [debug] [Thread-3 (]: On model.smartshop_dbt.order_status_summary: /* {"app": "dbt", "dbt_version": "1.11.8", "dbt_databricks_version": "1.12.0", "databricks_sql_connector_version": "4.1.5", "profile_name": "smartshop_dbt", "target_name": "dev", "invocation_id": "01dd8ca3-c267-4385-a363-82c70345ad6c", "node_id": "model.smartshop_dbt.order_status_summary"} */
+
+  
+  
+  
+  create or replace view `workspace`.`default`.`order_status_summary`
+  
+  as (
+    select
+    order_status,
+    count(*)                                    as total_orders,
+    round(count(*) * 100.0 / sum(count(*)) over(), 2) as percentage
+from workspace.default.olist_orders_dataset
+group by order_status
+order by total_orders desc
+  )
+
+[0m03:45:05.411854 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m03:45:05.696353 [debug] [Thread-3 (]: Databricks adapter: Connection(session-id=01f15744-7ae5-1b6c-b125-0b6074190194) - Created
+[0m03:45:06.643404 [debug] [Thread-3 (]: SQL status: OK in 1.230 seconds
+[0m03:45:06.645401 [debug] [Thread-3 (]: Databricks adapter: Cursor(session-id=01f15744-7ae5-1b6c-b125-0b6074190194, command-id=01f15744-7af4-1a0d-a265-27c376b02ac3) - Closing
+[0m03:45:06.646649 [debug] [Thread-3 (]: Applying tags to relation None
+[0m03:45:06.647840 [debug] [Thread-3 (]: On model.smartshop_dbt.order_status_summary: Close
+[0m03:45:06.648315 [debug] [Thread-3 (]: Databricks adapter: Connection(session-id=01f15744-7ae5-1b6c-b125-0b6074190194) - Closing
+[0m03:45:06.753056 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '01dd8ca3-c267-4385-a363-82c70345ad6c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112b9af90>]}
+[0m03:45:06.754617 [info ] [Thread-3 (]: 4 of 6 OK created sql view model default.order_status_summary .................. [[32mOK[0m in 1.36s]
+[0m03:45:06.755660 [debug] [Thread-3 (]: Finished running node model.smartshop_dbt.order_status_summary
+[0m03:45:06.756319 [debug] [Thread-3 (]: Began running node model.smartshop_dbt.top_products
+[0m03:45:06.757108 [info ] [Thread-3 (]: 5 of 6 START sql view model default.top_products ............................... [RUN]
+[0m03:45:06.757934 [debug] [Thread-3 (]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=model.smartshop_dbt.top_products) - Creating connection
+[0m03:45:06.758384 [debug] [Thread-3 (]: Acquiring new databricks connection 'model.smartshop_dbt.top_products'
+[0m03:45:06.758805 [debug] [Thread-3 (]: Began compiling node model.smartshop_dbt.top_products
+[0m03:45:06.764889 [debug] [Thread-3 (]: Writing injected SQL for node "model.smartshop_dbt.top_products"
+[0m03:45:06.765945 [debug] [Thread-3 (]: Began executing node model.smartshop_dbt.top_products
+[0m03:45:06.768749 [debug] [Thread-3 (]: MATERIALIZING VIEW
+[0m03:45:06.769872 [debug] [Thread-3 (]: Creating view `workspace`.`default`.`top_products`
+[0m03:45:06.770579 [debug] [Thread-3 (]: Writing runtime sql for node "model.smartshop_dbt.top_products"
+[0m03:45:06.771114 [debug] [Thread-3 (]: Using databricks connection "model.smartshop_dbt.top_products"
+[0m03:45:06.771493 [debug] [Thread-3 (]: On model.smartshop_dbt.top_products: /* {"app": "dbt", "dbt_version": "1.11.8", "dbt_databricks_version": "1.12.0", "databricks_sql_connector_version": "4.1.5", "profile_name": "smartshop_dbt", "target_name": "dev", "invocation_id": "01dd8ca3-c267-4385-a363-82c70345ad6c", "node_id": "model.smartshop_dbt.top_products"} */
+
+  
+  
+  
+  create or replace view `workspace`.`default`.`top_products`
+  
+  as (
+    with items as (
+    select * from workspace.default.olist_order_items_dataset
+),
+products as (
+    select * from workspace.default.olist_products_dataset
+),
+orders as (
+    select * from workspace.default.olist_orders_dataset
+)
+
+select
+    p.product_category_name          as category,
+    count(distinct i.order_id)       as total_orders,
+    sum(i.quantity)                  as total_units_sold,
+    round(sum(i.price), 2)           as total_revenue,
+    round(avg(i.price), 2)           as avg_price
+from items i
+join products p on i.product_id = p.product_id
+join orders o on i.order_id = o.order_id
+where o.order_status = 'delivered'
+group by p.product_category_name
+order by total_revenue desc
+limit 20
+  )
+
+[0m03:45:06.771806 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m03:45:07.023428 [debug] [Thread-3 (]: Databricks adapter: Connection(session-id=01f15744-7bb3-1c02-9fb8-4cbd7b4210f3) - Created
+[0m03:45:08.078857 [debug] [Thread-3 (]: Databricks adapter: Exception while trying to execute query
+/* {"app": "dbt", "dbt_version": "1.11.8", "dbt_databricks_version": "1.12.0", "databricks_sql_connector_version": "4.1.5", "profile_name": "smartshop_dbt", "target_name": "dev", "invocation_id": "01dd8ca3-c267-4385-a363-82c70345ad6c", "node_id": "model.smartshop_dbt.top_products"} */
+
+  
+  
+  
+  create or replace view `workspace`.`default`.`top_products`
+  
+  as (
+    with items as (
+    select * from workspace.default.olist_order_items_dataset
+),
+products as (
+    select * from workspace.default.olist_products_dataset
+),
+orders as (
+    select * from workspace.default.olist_orders_dataset
+)
+
+select
+    p.product_category_name          as category,
+    count(distinct i.order_id)       as total_orders,
+    sum(i.quantity)                  as total_units_sold,
+    round(sum(i.price), 2)           as total_revenue,
+    round(avg(i.price), 2)           as avg_price
+from items i
+join products p on i.product_id = p.product_id
+join orders o on i.order_id = o.order_id
+where o.order_status = 'delivered'
+group by p.product_category_name
+order by total_revenue desc
+limit 20
+  )
+
+: [UNRESOLVED_COLUMN.WITH_SUGGESTION] A column, variable, or function parameter with name `i`.`quantity` cannot be resolved. Did you mean one of the following? [`i`.`price`, `i`.`order_id`, `o`.`order_id`, `i`.`product_id`, `i`.`seller_id`]. SQLSTATE: 42703; line 22 pos 8
+Error properties: diagnostic-info=org.apache.hive.service.cli.HiveSQLException: Error running query: [UNRESOLVED_COLUMN.WITH_SUGGESTION] org.apache.spark.sql.catalyst.ExtendedAnalysisException: [UNRESOLVED_COLUMN.WITH_SUGGESTION] A column, variable, or function parameter with name `i`.`quantity` cannot be resolved. Did you mean one of the following? [`i`.`price`, `i`.`order_id`, `o`.`order_id`, `i`.`product_id`, `i`.`seller_id`]. SQLSTATE: 42703; line 22 pos 8
+	at org.apache.spark.sql.hive.thriftserver.HiveThriftServerErrors$.runningQueryError(HiveThriftServerErrors.scala:57)
+	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.$anonfun$execute$1(SparkExecuteStatementOperation.scala:1159)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.scala:18)
+	at com.databricks.unity.UCSEphemeralState$Handle.runWith(UCSEphemeralState.scala:51)
+	at com.databricks.unity.HandleImpl.runWith(UCSHandle.scala:128)
+	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.org$apache$spark$sql$hive$thriftserver$SparkExecuteStatementOperation$$execute(SparkExecuteStatementOperation.scala:874)
+	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation$$anon$2$$anon$3.$anonfun$run$6(SparkExecuteStatementOperation.scala:635)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.scala:18)
+	at org.apache.spark.sql.execution.SQLExecution$.withRootExecution(SQLExecution.scala:1387)
+	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation$$anon$2$$anon$3.$anonfun$run$3(SparkExecuteStatementOperation.scala:635)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.scala:18)
+	at com.databricks.util.TracingSpanUtils$.withTracing(TracingSpanUtils.scala:250)
+	at com.databricks.spark.util.DatabricksTracingHelper.withSpan(DatabricksSparkTracingHelper.scala:154)
+	at com.databricks.spark.util.DBRTracing$.withSpan(DBRTracing.scala:87)
+	at org.apache.spark.sql.hive.thriftserver.ThriftLocalProperties.$anonfun$withLocalProperties$17(ThriftLocalProperties.scala:399)
+	at com.databricks.logging.AttributionContextTracing.$anonfun$withAttributionContext$1(AttributionContextTracing.scala:147)
+	at com.databricks.logging.AttributionContext$.$anonfun$withValue$1(AttributionContext.scala:349)
+	at scala.util.DynamicVariable.withValue(DynamicVariable.scala:59)
+	at com.databricks.logging.AttributionContext$.withValue(AttributionContext.scala:345)
+	at com.databricks.logging.AttributionContextTracing.withAttributionContext(AttributionContextTracing.scala:145)
+	at com.databricks.logging.AttributionContextTracing.withAttributionContext$(AttributionContextTracing.scala:142)
+	at com.databricks.spark.util.PublicDBLogging.withAttributionContext(DatabricksSparkUsageLogger.scala:29)
+	at com.databricks.logging.AttributionContextTracing.withAttributionTags(AttributionContextTracing.scala:202)
+	at com.databricks.logging.AttributionContextTracing.withAttributionTags$(AttributionContextTracing.scala:183)
+	at com.databricks.spark.util.PublicDBLogging.withAttributionTags(DatabricksSparkUsageLogger.scala:29)
+	at com.databricks.spark.util.PublicDBLogging.withAttributionTags0(DatabricksSparkUsageLogger.scala:108)
+	at com.databricks.spark.util.DatabricksSparkUsageLogger.withAttributionTags(DatabricksSparkUsageLogger.scala:215)
+	at com.databricks.spark.util.UsageLogging.$anonfun$withAttributionTags$1(UsageLogger.scala:668)
+	at com.databricks.spark.util.UsageLogging$.withAttributionTags(UsageLogger.scala:780)
+	at com.databricks.spark.util.UsageLogging$.withAttributionTags(UsageLogger.scala:789)
+	at com.databricks.spark.util.UsageLogging.withAttributionTags(UsageLogger.scala:668)
+	at com.databricks.spark.util.UsageLogging.withAttributionTags$(UsageLogger.scala:666)
+	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.withAttributionTags(SparkExecuteStatementOperation.scala:77)
+	at org.apache.spark.sql.hive.thriftserver.ThriftLocalProperties.$anonfun$withLocalProperties$14(ThriftLocalProperties.scala:398)
+	at com.databricks.spark.util.IdentityClaim$.withClaim(IdentityClaim.scala:48)
+	at org.apache.spark.sql.hive.thriftserver.ThriftLocalProperties.withLocalProperties(ThriftLocalProperties.scala:393)
+	at org.apache.spark.sql.hive.thriftserver.ThriftLocalProperties.withLocalProperties$(ThriftLocalProperties.scala:219)
+	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.withLocalProperties(SparkExecuteStatementOperation.scala:77)
+	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation$$anon$2$$anon$3.$anonfun$run$2(SparkExecuteStatementOperation.scala:611)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.scala:18)
+	at com.databricks.spark.util.DBRTracing$.withSpanFromParent(DBRTracing.scala:70)
+	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation$$anon$2$$anon$3.run(SparkExecuteStatementOperation.scala:611)
+	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation$$anon$2$$anon$3.run(SparkExecuteStatementOperation.scala:584)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:712)
+	at java.base/javax.security.auth.Subject.doAs(Subject.java:439)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1953)
+	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation$$anon$2.run(SparkExecuteStatementOperation.scala:649)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: org.apache.spark.sql.catalyst.ExtendedAnalysisException: [UNRESOLVED_COLUMN.WITH_SUGGESTION] A column, variable, or function parameter with name `i`.`quantity` cannot be resolved. Did you mean one of the following? [`i`.`price`, `i`.`order_id`, `o`.`order_id`, `i`.`product_id`, `i`.`seller_id`]. SQLSTATE: 42703; line 22 pos 8
+	at org.apache.spark.sql.catalyst.ExtendedAnalysisException.copyPlan(ExtendedAnalysisException.scala:97)
+	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.$anonfun$execute$1(SparkExecuteStatementOperation.scala:1113)
+	... 50 more
+, operation-id=01f15744-7bbe-1ee2-9f36-cdb4fe11d735
+[0m03:45:08.080550 [debug] [Thread-3 (]: On model.smartshop_dbt.top_products: Close
+[0m03:45:08.081128 [debug] [Thread-3 (]: Databricks adapter: Connection(session-id=01f15744-7bb3-1c02-9fb8-4cbd7b4210f3) - Closing
+[0m03:45:08.201432 [debug] [Thread-3 (]: Database Error in model top_products (models/smartshop/top_products.sql)
+  [UNRESOLVED_COLUMN.WITH_SUGGESTION] A column, variable, or function parameter with name `i`.`quantity` cannot be resolved. Did you mean one of the following? [`i`.`price`, `i`.`order_id`, `o`.`order_id`, `i`.`product_id`, `i`.`seller_id`]. SQLSTATE: 42703; line 22 pos 8
+  compiled code at target/run/smartshop_dbt/models/smartshop/top_products.sql
+[0m03:45:08.202158 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '01dd8ca3-c267-4385-a363-82c70345ad6c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112d4b890>]}
+[0m03:45:08.202754 [error] [Thread-3 (]: 5 of 6 ERROR creating sql view model default.top_products ...................... [[31mERROR[0m in 1.44s]
+[0m03:45:08.203218 [debug] [Thread-3 (]: Finished running node model.smartshop_dbt.top_products
+[0m03:45:08.203549 [debug] [Thread-3 (]: Began running node model.smartshop_dbt.my_second_dbt_model
+[0m03:45:08.203982 [debug] [Thread-6 (]: Marking all children of 'model.smartshop_dbt.top_products' to be skipped because of status 'error'.  Reason: Database Error in model top_products (models/smartshop/top_products.sql)
+  [UNRESOLVED_COLUMN.WITH_SUGGESTION] A column, variable, or function parameter with name `i`.`quantity` cannot be resolved. Did you mean one of the following? [`i`.`price`, `i`.`order_id`, `o`.`order_id`, `i`.`product_id`, `i`.`seller_id`]. SQLSTATE: 42703; line 22 pos 8
+  compiled code at target/run/smartshop_dbt/models/smartshop/top_products.sql.
+[0m03:45:08.204424 [info ] [Thread-3 (]: 6 of 6 START sql view model default.my_second_dbt_model ........................ [RUN]
+[0m03:45:08.205792 [debug] [Thread-3 (]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=model.smartshop_dbt.my_second_dbt_model) - Creating connection
+[0m03:45:08.206035 [debug] [Thread-3 (]: Acquiring new databricks connection 'model.smartshop_dbt.my_second_dbt_model'
+[0m03:45:08.206257 [debug] [Thread-3 (]: Began compiling node model.smartshop_dbt.my_second_dbt_model
+[0m03:45:08.209329 [debug] [Thread-3 (]: Writing injected SQL for node "model.smartshop_dbt.my_second_dbt_model"
+[0m03:45:08.209920 [debug] [Thread-3 (]: Began executing node model.smartshop_dbt.my_second_dbt_model
+[0m03:45:08.211686 [debug] [Thread-3 (]: MATERIALIZING VIEW
+[0m03:45:08.212544 [debug] [Thread-3 (]: Creating view `workspace`.`default`.`my_second_dbt_model`
+[0m03:45:08.213083 [debug] [Thread-3 (]: Writing runtime sql for node "model.smartshop_dbt.my_second_dbt_model"
+[0m03:45:08.213484 [debug] [Thread-3 (]: Using databricks connection "model.smartshop_dbt.my_second_dbt_model"
+[0m03:45:08.213718 [debug] [Thread-3 (]: On model.smartshop_dbt.my_second_dbt_model: /* {"app": "dbt", "dbt_version": "1.11.8", "dbt_databricks_version": "1.12.0", "databricks_sql_connector_version": "4.1.5", "profile_name": "smartshop_dbt", "target_name": "dev", "invocation_id": "01dd8ca3-c267-4385-a363-82c70345ad6c", "node_id": "model.smartshop_dbt.my_second_dbt_model"} */
+
+  
+  
+  
+  create or replace view `workspace`.`default`.`my_second_dbt_model`
+  
+  as (
+    -- Use the `ref` function to select from other models
+
+select *
+from `workspace`.`default`.`my_first_dbt_model`
+where id = 1
+  )
+
+[0m03:45:08.213944 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m03:45:08.456872 [debug] [Thread-3 (]: Databricks adapter: Connection(session-id=01f15744-7c8d-1b09-a6cb-a1f1f323130b) - Created
+[0m03:45:09.309386 [debug] [Thread-3 (]: SQL status: OK in 1.100 seconds
+[0m03:45:09.310528 [debug] [Thread-3 (]: Databricks adapter: Cursor(session-id=01f15744-7c8d-1b09-a6cb-a1f1f323130b, command-id=01f15744-7c99-1eb1-8d79-6577cb725aa3) - Closing
+[0m03:45:09.311352 [debug] [Thread-3 (]: Applying tags to relation None
+[0m03:45:09.312198 [debug] [Thread-3 (]: On model.smartshop_dbt.my_second_dbt_model: Close
+[0m03:45:09.312531 [debug] [Thread-3 (]: Databricks adapter: Connection(session-id=01f15744-7c8d-1b09-a6cb-a1f1f323130b) - Closing
+[0m03:45:09.406108 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '01dd8ca3-c267-4385-a363-82c70345ad6c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112da1d50>]}
+[0m03:45:09.406530 [info ] [Thread-3 (]: 6 of 6 OK created sql view model default.my_second_dbt_model ................... [[32mOK[0m in 1.20s]
+[0m03:45:09.407811 [debug] [Thread-3 (]: Finished running node model.smartshop_dbt.my_second_dbt_model
+[0m03:45:09.410418 [debug] [MainThread]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=master) - Creating connection
+[0m03:45:09.410779 [debug] [MainThread]: Acquiring new databricks connection 'master'
+[0m03:45:09.411050 [info ] [MainThread]: 
+[0m03:45:09.411189 [info ] [MainThread]: Finished running 1 table model, 5 view models in 0 hours 0 minutes and 54.79 seconds (54.79s).
+[0m03:45:09.411721 [debug] [MainThread]: Command end result
+[0m03:45:09.435385 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/prasadpatil/Downloads/Smartshop Analytical Platform/smartshop_dbt/target/manifest.json
+[0m03:45:09.436817 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/prasadpatil/Downloads/Smartshop Analytical Platform/smartshop_dbt/target/semantic_manifest.json
+[0m03:45:09.439937 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/prasadpatil/Downloads/Smartshop Analytical Platform/smartshop_dbt/target/run_results.json
+[0m03:45:09.440071 [info ] [MainThread]: 
+[0m03:45:09.440222 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m03:45:09.440340 [info ] [MainThread]: 
+[0m03:45:09.440499 [error] [MainThread]: [31mFailure in model top_products (models/smartshop/top_products.sql)[0m
+[0m03:45:09.440647 [error] [MainThread]:   Database Error in model top_products (models/smartshop/top_products.sql)
+  [UNRESOLVED_COLUMN.WITH_SUGGESTION] A column, variable, or function parameter with name `i`.`quantity` cannot be resolved. Did you mean one of the following? [`i`.`price`, `i`.`order_id`, `o`.`order_id`, `i`.`product_id`, `i`.`seller_id`]. SQLSTATE: 42703; line 22 pos 8
+  compiled code at target/run/smartshop_dbt/models/smartshop/top_products.sql
+[0m03:45:09.440764 [info ] [MainThread]: 
+[0m03:45:09.440894 [info ] [MainThread]:   compiled code at target/compiled/smartshop_dbt/models/smartshop/top_products.sql
+[0m03:45:09.441009 [info ] [MainThread]: 
+[0m03:45:09.441154 [info ] [MainThread]: Done. PASS=5 WARN=0 ERROR=1 SKIP=0 NO-OP=0 TOTAL=6
+[0m03:45:09.445089 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 57.00278, "process_in_blocks": "0", "process_kernel_time": 0.463785, "process_mem_max_rss": "256098304", "process_out_blocks": "0", "process_user_time": 2.708206}
+[0m03:45:09.445377 [debug] [MainThread]: Command `dbt run` failed at 03:45:09.445324 after 57.00 seconds
+[0m03:45:09.446648 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a4ce590>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a4cdcd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1011aa010>]}
+[0m03:45:09.446865 [debug] [MainThread]: Flushing usage events
+[0m03:45:09.746602 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m03:46:18.868526 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109cb4e50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a353b10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a35e8d0>]}
+
+
+============================== 03:46:18.871291 | 8f717eba-f04a-48ce-87e5-467378e0ba48 ==============================
+[0m03:46:18.871291 [info ] [MainThread]: Running with dbt=1.11.8
+[0m03:46:18.871611 [debug] [MainThread]: running dbt with arguments {'write_json': 'True', 'cache_selected_only': 'False', 'static_parser': 'True', 'no_print': 'None', 'use_experimental_parser': 'False', 'fail_fast': 'False', 'target_path': 'None', 'introspect': 'True', 'invocation_command': 'dbt run --select top_products', 'version_check': 'True', 'warn_error': 'None', 'indirect_selection': 'eager', 'debug': 'False', 'log_path': '/Users/prasadpatil/Downloads/Smartshop Analytical Platform/smartshop_dbt/logs', 'empty': 'False', 'partial_parse': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'send_anonymous_usage_stats': 'True', 'log_format': 'default', 'log_cache_events': 'False', 'printer_width': '80', 'quiet': 'False', 'use_colors': 'True', 'profiles_dir': '/Users/prasadpatil/.dbt'}
+[0m03:46:19.310281 [debug] [MainThread]: Spark adapter: Setting pyhive.hive logging to ERROR
+[0m03:46:19.310517 [debug] [MainThread]: Spark adapter: Setting thrift.transport logging to ERROR
+[0m03:46:19.310641 [debug] [MainThread]: Spark adapter: Setting thrift.protocol logging to ERROR
+[0m03:46:19.948191 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '8f717eba-f04a-48ce-87e5-467378e0ba48', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11214a350>]}
+[0m03:46:20.011685 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '8f717eba-f04a-48ce-87e5-467378e0ba48', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109456550>]}
+[0m03:46:20.012064 [info ] [MainThread]: Registered adapter: databricks=1.12.0
+[0m03:46:20.091421 [debug] [MainThread]: checksum: 7d524ac048c2100769df89d592e662e060a73ca564e31bd9c2a37efdfe8d8ab6, vars: {}, profile: , target: , version: 1.11.8
+[0m03:46:20.166598 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m03:46:20.166870 [debug] [MainThread]: Partial parsing: updated file: smartshop_dbt://models/smartshop/top_products.sql
+[0m03:46:20.283660 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '8f717eba-f04a-48ce-87e5-467378e0ba48', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1124d7910>]}
+[0m03:46:20.325633 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/prasadpatil/Downloads/Smartshop Analytical Platform/smartshop_dbt/target/manifest.json
+[0m03:46:20.326831 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/prasadpatil/Downloads/Smartshop Analytical Platform/smartshop_dbt/target/semantic_manifest.json
+[0m03:46:20.333648 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '8f717eba-f04a-48ce-87e5-467378e0ba48', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112690150>]}
+[0m03:46:20.333843 [info ] [MainThread]: Found 6 models, 4 data tests, 758 macros
+[0m03:46:20.333977 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '8f717eba-f04a-48ce-87e5-467378e0ba48', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1129d5750>]}
+[0m03:46:20.334626 [info ] [MainThread]: 
+[0m03:46:20.334767 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m03:46:20.334871 [info ] [MainThread]: 
+[0m03:46:20.335102 [debug] [MainThread]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=master) - Creating connection
+[0m03:46:20.335225 [debug] [MainThread]: Acquiring new databricks connection 'master'
+[0m03:46:20.335562 [debug] [ThreadPool]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=list_workspace) - Creating connection
+[0m03:46:20.335704 [debug] [ThreadPool]: Acquiring new databricks connection 'list_workspace'
+[0m03:46:20.340811 [debug] [ThreadPool]: Using databricks connection "list_workspace"
+[0m03:46:20.340948 [debug] [ThreadPool]: On list_workspace: /* {"app": "dbt", "dbt_version": "1.11.8", "dbt_databricks_version": "1.12.0", "databricks_sql_connector_version": "4.1.5", "profile_name": "smartshop_dbt", "target_name": "dev", "invocation_id": "8f717eba-f04a-48ce-87e5-467378e0ba48", "connection_name": "list_workspace"} */
+
+    
+
+  SHOW SCHEMAS IN `workspace`
+
+
+  
+[0m03:46:20.341061 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m03:46:20.797549 [debug] [ThreadPool]: Databricks adapter: Connection(session-id=01f15744-a7aa-1c1f-9088-390b13fc55c7) - Created
+[0m03:46:21.348529 [debug] [ThreadPool]: SQL status: OK in 1.010 seconds
+[0m03:46:21.358937 [debug] [ThreadPool]: Databricks adapter: Cursor(session-id=01f15744-a7aa-1c1f-9088-390b13fc55c7, command-id=01f15744-a7b8-1ea2-b2ce-611080e50165) - Closing
+[0m03:46:21.359458 [debug] [ThreadPool]: On list_workspace: Close
+[0m03:46:21.359738 [debug] [ThreadPool]: Databricks adapter: Connection(session-id=01f15744-a7aa-1c1f-9088-390b13fc55c7) - Closing
+[0m03:46:21.466613 [debug] [ThreadPool]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=list_workspace_default) - Creating connection
+[0m03:46:21.467350 [debug] [ThreadPool]: Acquiring new databricks connection 'list_workspace_default'
+[0m03:46:21.475450 [debug] [ThreadPool]: Using databricks connection "list_workspace_default"
+[0m03:46:21.476140 [debug] [ThreadPool]: On list_workspace_default: /* {"app": "dbt", "dbt_version": "1.11.8", "dbt_databricks_version": "1.12.0", "databricks_sql_connector_version": "4.1.5", "profile_name": "smartshop_dbt", "target_name": "dev", "invocation_id": "8f717eba-f04a-48ce-87e5-467378e0ba48", "connection_name": "list_workspace_default"} */
+
+    
+SELECT
+  table_name,
+  if(table_type IN ('EXTERNAL', 'MANAGED', 'MANAGED_SHALLOW_CLONE', 'EXTERNAL_SHALLOW_CLONE'), 'table', lower(table_type)) AS table_type,
+  lower(data_source_format) AS file_format,
+  table_owner,
+  if(
+    table_type IN (
+      'EXTERNAL',
+      'MANAGED',
+      'MANAGED_SHALLOW_CLONE',
+      'EXTERNAL_SHALLOW_CLONE'
+    ),
+    lower(table_type),
+    NULL
+  ) AS databricks_table_type
+FROM `system`.`information_schema`.`tables`
+WHERE table_catalog = 'workspace'
+  AND table_schema = 'default'
+
+  
+[0m03:46:21.476467 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m03:46:21.714178 [debug] [ThreadPool]: Databricks adapter: Connection(session-id=01f15744-a838-1e0a-a786-fcee98fa87ed) - Created
+[0m03:46:22.523214 [debug] [ThreadPool]: SQL status: OK in 1.050 seconds
+[0m03:46:22.528697 [debug] [ThreadPool]: Databricks adapter: Cursor(session-id=01f15744-a838-1e0a-a786-fcee98fa87ed, command-id=01f15744-a844-1724-b57c-f1942c4a1c0c) - Closing
+[0m03:46:22.529992 [debug] [ThreadPool]: On list_workspace_default: Close
+[0m03:46:22.530445 [debug] [ThreadPool]: Databricks adapter: Connection(session-id=01f15744-a838-1e0a-a786-fcee98fa87ed) - Closing
+[0m03:46:22.617649 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '8f717eba-f04a-48ce-87e5-467378e0ba48', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1126c3d90>]}
+[0m03:46:22.622455 [debug] [Thread-3 (]: Began running node model.smartshop_dbt.top_products
+[0m03:46:22.623191 [info ] [Thread-3 (]: 1 of 1 START sql view model default.top_products ............................... [RUN]
+[0m03:46:22.623904 [debug] [Thread-3 (]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=model.smartshop_dbt.top_products) - Creating connection
+[0m03:46:22.624273 [debug] [Thread-3 (]: Acquiring new databricks connection 'model.smartshop_dbt.top_products'
+[0m03:46:22.624617 [debug] [Thread-3 (]: Began compiling node model.smartshop_dbt.top_products
+[0m03:46:22.635319 [debug] [Thread-3 (]: Writing injected SQL for node "model.smartshop_dbt.top_products"
+[0m03:46:22.636526 [debug] [Thread-3 (]: Began executing node model.smartshop_dbt.top_products
+[0m03:46:22.649887 [debug] [Thread-3 (]: MATERIALIZING VIEW
+[0m03:46:22.662188 [debug] [Thread-3 (]: Creating view `workspace`.`default`.`top_products`
+[0m03:46:22.668313 [debug] [Thread-3 (]: Writing runtime sql for node "model.smartshop_dbt.top_products"
+[0m03:46:22.668844 [debug] [Thread-3 (]: Using databricks connection "model.smartshop_dbt.top_products"
+[0m03:46:22.669111 [debug] [Thread-3 (]: On model.smartshop_dbt.top_products: /* {"app": "dbt", "dbt_version": "1.11.8", "dbt_databricks_version": "1.12.0", "databricks_sql_connector_version": "4.1.5", "profile_name": "smartshop_dbt", "target_name": "dev", "invocation_id": "8f717eba-f04a-48ce-87e5-467378e0ba48", "node_id": "model.smartshop_dbt.top_products"} */
+
+  
+  
+  
+  create or replace view `workspace`.`default`.`top_products`
+  
+  as (
+    with items as (
+    select * from workspace.default.olist_order_items_dataset
+),
+products as (
+    select * from workspace.default.olist_products_dataset
+),
+orders as (
+    select * from workspace.default.olist_orders_dataset
+)
+
+select
+    p.product_category_name          as category,
+    count(distinct i.order_id)       as total_orders,
+    round(sum(i.price), 2)           as total_revenue,
+    round(avg(i.price), 2)           as avg_price
+from items i
+join products p on i.product_id = p.product_id
+join orders o on i.order_id = o.order_id
+where o.order_status = 'delivered'
+group by p.product_category_name
+order by total_revenue desc
+limit 20
+  )
+
+[0m03:46:22.669319 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m03:46:22.900543 [debug] [Thread-3 (]: Databricks adapter: Connection(session-id=01f15744-a8ec-17e0-8bfb-8c03c87bba23) - Created
+[0m03:46:24.158763 [debug] [Thread-3 (]: SQL status: OK in 1.490 seconds
+[0m03:46:24.160542 [debug] [Thread-3 (]: Databricks adapter: Cursor(session-id=01f15744-a8ec-17e0-8bfb-8c03c87bba23, command-id=01f15744-a8f9-12e5-978e-a558ad02ae0e) - Closing
+[0m03:46:24.174089 [debug] [Thread-3 (]: Applying tags to relation None
+[0m03:46:24.176904 [debug] [Thread-3 (]: On model.smartshop_dbt.top_products: Close
+[0m03:46:24.177241 [debug] [Thread-3 (]: Databricks adapter: Connection(session-id=01f15744-a8ec-17e0-8bfb-8c03c87bba23) - Closing
+[0m03:46:24.278811 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '8f717eba-f04a-48ce-87e5-467378e0ba48', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112a29990>]}
+[0m03:46:24.280087 [info ] [Thread-3 (]: 1 of 1 OK created sql view model default.top_products .......................... [[32mOK[0m in 1.65s]
+[0m03:46:24.281139 [debug] [Thread-3 (]: Finished running node model.smartshop_dbt.top_products
+[0m03:46:24.283109 [debug] [MainThread]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=master) - Creating connection
+[0m03:46:24.283606 [debug] [MainThread]: Acquiring new databricks connection 'master'
+[0m03:46:24.284210 [info ] [MainThread]: 
+[0m03:46:24.284924 [info ] [MainThread]: Finished running 1 view model in 0 hours 0 minutes and 3.95 seconds (3.95s).
+[0m03:46:24.285888 [debug] [MainThread]: Command end result
+[0m03:46:24.325065 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/prasadpatil/Downloads/Smartshop Analytical Platform/smartshop_dbt/target/manifest.json
+[0m03:46:24.326192 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/prasadpatil/Downloads/Smartshop Analytical Platform/smartshop_dbt/target/semantic_manifest.json
+[0m03:46:24.329398 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/prasadpatil/Downloads/Smartshop Analytical Platform/smartshop_dbt/target/run_results.json
+[0m03:46:24.329551 [info ] [MainThread]: 
+[0m03:46:24.329753 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m03:46:24.329897 [info ] [MainThread]: 
+[0m03:46:24.330062 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=1
+[0m03:46:24.333435 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 5.5109167, "process_in_blocks": "0", "process_kernel_time": 0.338892, "process_mem_max_rss": "260325376", "process_out_blocks": "0", "process_user_time": 1.802572}
+[0m03:46:24.333650 [debug] [MainThread]: Command `dbt run` succeeded at 03:46:24.333609 after 5.51 seconds
+[0m03:46:24.333836 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a023b50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1095a6e90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112b71450>]}
+[0m03:46:24.334004 [debug] [MainThread]: Flushing usage events
+[0m03:46:24.496246 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m03:46:47.505840 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b505010>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b608510>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b608e50>]}
+
+
+============================== 03:46:47.508155 | b5287d58-8ddd-49bd-b1b9-4dbbb1992e8c ==============================
+[0m03:46:47.508155 [info ] [MainThread]: Running with dbt=1.11.8
+[0m03:46:47.508442 [debug] [MainThread]: running dbt with arguments {'warn_error': 'None', 'indirect_selection': 'eager', 'partial_parse': 'True', 'log_cache_events': 'False', 'use_colors': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'version_check': 'True', 'fail_fast': 'False', 'log_format': 'default', 'debug': 'False', 'cache_selected_only': 'False', 'printer_width': '80', 'static_parser': 'True', 'empty': 'False', 'use_experimental_parser': 'False', 'write_json': 'True', 'invocation_command': 'dbt run', 'quiet': 'False', 'profiles_dir': '/Users/prasadpatil/.dbt', 'introspect': 'True', 'send_anonymous_usage_stats': 'True', 'no_print': 'None', 'target_path': 'None', 'log_path': '/Users/prasadpatil/Downloads/Smartshop Analytical Platform/smartshop_dbt/logs'}
+[0m03:46:47.911025 [debug] [MainThread]: Spark adapter: Setting pyhive.hive logging to ERROR
+[0m03:46:47.911294 [debug] [MainThread]: Spark adapter: Setting thrift.transport logging to ERROR
+[0m03:46:47.911426 [debug] [MainThread]: Spark adapter: Setting thrift.protocol logging to ERROR
+[0m03:46:48.570884 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'b5287d58-8ddd-49bd-b1b9-4dbbb1992e8c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11351ea50>]}
+[0m03:46:48.633962 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'b5287d58-8ddd-49bd-b1b9-4dbbb1992e8c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b5a4a90>]}
+[0m03:46:48.634353 [info ] [MainThread]: Registered adapter: databricks=1.12.0
+[0m03:46:48.716017 [debug] [MainThread]: checksum: 7d524ac048c2100769df89d592e662e060a73ca564e31bd9c2a37efdfe8d8ab6, vars: {}, profile: , target: , version: 1.11.8
+[0m03:46:48.792731 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m03:46:48.792927 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m03:46:48.793042 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m03:46:48.811863 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'b5287d58-8ddd-49bd-b1b9-4dbbb1992e8c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10de70c90>]}
+[0m03:46:48.857187 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/prasadpatil/Downloads/Smartshop Analytical Platform/smartshop_dbt/target/manifest.json
+[0m03:46:48.858954 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/prasadpatil/Downloads/Smartshop Analytical Platform/smartshop_dbt/target/semantic_manifest.json
+[0m03:46:48.867176 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'b5287d58-8ddd-49bd-b1b9-4dbbb1992e8c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x113784610>]}
+[0m03:46:48.867498 [info ] [MainThread]: Found 6 models, 4 data tests, 758 macros
+[0m03:46:48.867657 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'b5287d58-8ddd-49bd-b1b9-4dbbb1992e8c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x113af57d0>]}
+[0m03:46:48.868671 [info ] [MainThread]: 
+[0m03:46:48.868827 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m03:46:48.868936 [info ] [MainThread]: 
+[0m03:46:48.869208 [debug] [MainThread]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=master) - Creating connection
+[0m03:46:48.869349 [debug] [MainThread]: Acquiring new databricks connection 'master'
+[0m03:46:48.872704 [debug] [ThreadPool]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=list_workspace) - Creating connection
+[0m03:46:48.872889 [debug] [ThreadPool]: Acquiring new databricks connection 'list_workspace'
+[0m03:46:48.883683 [debug] [ThreadPool]: Using databricks connection "list_workspace"
+[0m03:46:48.884081 [debug] [ThreadPool]: On list_workspace: /* {"app": "dbt", "dbt_version": "1.11.8", "dbt_databricks_version": "1.12.0", "databricks_sql_connector_version": "4.1.5", "profile_name": "smartshop_dbt", "target_name": "dev", "invocation_id": "b5287d58-8ddd-49bd-b1b9-4dbbb1992e8c", "connection_name": "list_workspace"} */
+
+    
+
+  SHOW SCHEMAS IN `workspace`
+
+
+  
+[0m03:46:48.884219 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m03:46:49.142997 [debug] [ThreadPool]: Databricks adapter: Connection(session-id=01f15744-b890-1d64-b919-34d4fbea945a) - Created
+[0m03:46:49.556576 [debug] [ThreadPool]: SQL status: OK in 0.670 seconds
+[0m03:46:49.565361 [debug] [ThreadPool]: Databricks adapter: Cursor(session-id=01f15744-b890-1d64-b919-34d4fbea945a, command-id=01f15744-b89e-1564-b182-2ac25df1c4f2) - Closing
+[0m03:46:49.565877 [debug] [ThreadPool]: On list_workspace: Close
+[0m03:46:49.566140 [debug] [ThreadPool]: Databricks adapter: Connection(session-id=01f15744-b890-1d64-b919-34d4fbea945a) - Closing
+[0m03:46:49.651910 [debug] [ThreadPool]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=list_workspace_default) - Creating connection
+[0m03:46:49.652658 [debug] [ThreadPool]: Acquiring new databricks connection 'list_workspace_default'
+[0m03:46:49.661252 [debug] [ThreadPool]: Using databricks connection "list_workspace_default"
+[0m03:46:49.661858 [debug] [ThreadPool]: On list_workspace_default: /* {"app": "dbt", "dbt_version": "1.11.8", "dbt_databricks_version": "1.12.0", "databricks_sql_connector_version": "4.1.5", "profile_name": "smartshop_dbt", "target_name": "dev", "invocation_id": "b5287d58-8ddd-49bd-b1b9-4dbbb1992e8c", "connection_name": "list_workspace_default"} */
+
+    
+SELECT
+  table_name,
+  if(table_type IN ('EXTERNAL', 'MANAGED', 'MANAGED_SHALLOW_CLONE', 'EXTERNAL_SHALLOW_CLONE'), 'table', lower(table_type)) AS table_type,
+  lower(data_source_format) AS file_format,
+  table_owner,
+  if(
+    table_type IN (
+      'EXTERNAL',
+      'MANAGED',
+      'MANAGED_SHALLOW_CLONE',
+      'EXTERNAL_SHALLOW_CLONE'
+    ),
+    lower(table_type),
+    NULL
+  ) AS databricks_table_type
+FROM `system`.`information_schema`.`tables`
+WHERE table_catalog = 'workspace'
+  AND table_schema = 'default'
+
+  
+[0m03:46:49.662263 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m03:46:49.920820 [debug] [ThreadPool]: Databricks adapter: Connection(session-id=01f15744-b907-16f6-ba13-179ab5621abd) - Created
+[0m03:46:50.516254 [debug] [ThreadPool]: SQL status: OK in 0.850 seconds
+[0m03:46:50.521127 [debug] [ThreadPool]: Databricks adapter: Cursor(session-id=01f15744-b907-16f6-ba13-179ab5621abd, command-id=01f15744-b914-1d6d-abc6-bec22225ca21) - Closing
+[0m03:46:50.522214 [debug] [ThreadPool]: On list_workspace_default: Close
+[0m03:46:50.522536 [debug] [ThreadPool]: Databricks adapter: Connection(session-id=01f15744-b907-16f6-ba13-179ab5621abd) - Closing
+[0m03:46:50.620442 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'b5287d58-8ddd-49bd-b1b9-4dbbb1992e8c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1133e6250>]}
+[0m03:46:50.625975 [debug] [Thread-3 (]: Began running node model.smartshop_dbt.customer_analytics
+[0m03:46:50.626782 [info ] [Thread-3 (]: 1 of 6 START sql view model default.customer_analytics ......................... [RUN]
+[0m03:46:50.631285 [debug] [Thread-3 (]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=model.smartshop_dbt.customer_analytics) - Creating connection
+[0m03:46:50.631788 [debug] [Thread-3 (]: Acquiring new databricks connection 'model.smartshop_dbt.customer_analytics'
+[0m03:46:50.632213 [debug] [Thread-3 (]: Began compiling node model.smartshop_dbt.customer_analytics
+[0m03:46:50.640761 [debug] [Thread-3 (]: Writing injected SQL for node "model.smartshop_dbt.customer_analytics"
+[0m03:46:50.641830 [debug] [Thread-3 (]: Began executing node model.smartshop_dbt.customer_analytics
+[0m03:46:50.657416 [debug] [Thread-3 (]: MATERIALIZING VIEW
+[0m03:46:50.669795 [debug] [Thread-3 (]: Creating view `workspace`.`default`.`customer_analytics`
+[0m03:46:50.675787 [debug] [Thread-3 (]: Writing runtime sql for node "model.smartshop_dbt.customer_analytics"
+[0m03:46:50.676211 [debug] [Thread-3 (]: Using databricks connection "model.smartshop_dbt.customer_analytics"
+[0m03:46:50.676449 [debug] [Thread-3 (]: On model.smartshop_dbt.customer_analytics: /* {"app": "dbt", "dbt_version": "1.11.8", "dbt_databricks_version": "1.12.0", "databricks_sql_connector_version": "4.1.5", "profile_name": "smartshop_dbt", "target_name": "dev", "invocation_id": "b5287d58-8ddd-49bd-b1b9-4dbbb1992e8c", "node_id": "model.smartshop_dbt.customer_analytics"} */
+
+  
+  
+  
+  create or replace view `workspace`.`default`.`customer_analytics`
+  
+  as (
+    with orders as (
+    select * from workspace.default.olist_orders_dataset
+),
+payments as (
+    select * from workspace.default.olist_order_payments_dataset
+),
+customers as (
+    select * from workspace.default.olist_customers_dataset
+)
+
+select
+    c.customer_state                        as state,
+    count(distinct c.customer_id)           as total_customers,
+    count(distinct o.order_id)              as total_orders,
+    round(sum(p.payment_value), 2)          as total_revenue,
+    round(avg(p.payment_value), 2)          as avg_order_value
+from customers c
+join orders o on c.customer_id = o.customer_id
+join payments p on o.order_id = p.order_id
+where o.order_status = 'delivered'
+group by c.customer_state
+order by total_revenue desc
+  )
+
+[0m03:46:50.676649 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m03:46:50.916632 [debug] [Thread-3 (]: Databricks adapter: Connection(session-id=01f15744-b99f-1644-9a1f-3a4a23ef146c) - Created
+[0m03:46:52.423246 [debug] [Thread-3 (]: SQL status: OK in 1.750 seconds
+[0m03:46:52.425516 [debug] [Thread-3 (]: Databricks adapter: Cursor(session-id=01f15744-b99f-1644-9a1f-3a4a23ef146c, command-id=01f15744-b9ac-160e-a121-837a2af40708) - Closing
+[0m03:46:52.441522 [debug] [Thread-3 (]: Applying tags to relation None
+[0m03:46:52.444751 [debug] [Thread-3 (]: On model.smartshop_dbt.customer_analytics: Close
+[0m03:46:52.445128 [debug] [Thread-3 (]: Databricks adapter: Connection(session-id=01f15744-b99f-1644-9a1f-3a4a23ef146c) - Closing
+[0m03:46:52.538591 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'b5287d58-8ddd-49bd-b1b9-4dbbb1992e8c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1138ac790>]}
+[0m03:46:52.539885 [info ] [Thread-3 (]: 1 of 6 OK created sql view model default.customer_analytics .................... [[32mOK[0m in 1.91s]
+[0m03:46:52.540714 [debug] [Thread-3 (]: Finished running node model.smartshop_dbt.customer_analytics
+[0m03:46:52.541247 [debug] [Thread-3 (]: Began running node model.smartshop_dbt.daily_revenue
+[0m03:46:52.542040 [info ] [Thread-3 (]: 2 of 6 START sql view model default.daily_revenue .............................. [RUN]
+[0m03:46:52.542914 [debug] [Thread-3 (]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=model.smartshop_dbt.daily_revenue) - Creating connection
+[0m03:46:52.543311 [debug] [Thread-3 (]: Acquiring new databricks connection 'model.smartshop_dbt.daily_revenue'
+[0m03:46:52.543651 [debug] [Thread-3 (]: Began compiling node model.smartshop_dbt.daily_revenue
+[0m03:46:52.548123 [debug] [Thread-3 (]: Writing injected SQL for node "model.smartshop_dbt.daily_revenue"
+[0m03:46:52.549430 [debug] [Thread-3 (]: Began executing node model.smartshop_dbt.daily_revenue
+[0m03:46:52.552615 [debug] [Thread-3 (]: MATERIALIZING VIEW
+[0m03:46:52.553955 [debug] [Thread-3 (]: Creating view `workspace`.`default`.`daily_revenue`
+[0m03:46:52.554789 [debug] [Thread-3 (]: Writing runtime sql for node "model.smartshop_dbt.daily_revenue"
+[0m03:46:52.555376 [debug] [Thread-3 (]: Using databricks connection "model.smartshop_dbt.daily_revenue"
+[0m03:46:52.555770 [debug] [Thread-3 (]: On model.smartshop_dbt.daily_revenue: /* {"app": "dbt", "dbt_version": "1.11.8", "dbt_databricks_version": "1.12.0", "databricks_sql_connector_version": "4.1.5", "profile_name": "smartshop_dbt", "target_name": "dev", "invocation_id": "b5287d58-8ddd-49bd-b1b9-4dbbb1992e8c", "node_id": "model.smartshop_dbt.daily_revenue"} */
+
+  
+  
+  
+  create or replace view `workspace`.`default`.`daily_revenue`
+  
+  as (
+    with orders as (
+    select * from workspace.default.olist_orders_dataset
+),
+payments as (
+    select * from workspace.default.olist_order_payments_dataset
+)
+
+select
+    date(o.order_purchase_timestamp) as order_date,
+    count(distinct o.order_id)       as total_orders,
+    round(sum(p.payment_value), 2)   as total_revenue,
+    round(avg(p.payment_value), 2)   as avg_order_value
+from orders o
+join payments p on o.order_id = p.order_id
+where o.order_status = 'delivered'
+group by date(o.order_purchase_timestamp)
+order by order_date
+  )
+
+[0m03:46:52.556124 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m03:46:52.792799 [debug] [Thread-3 (]: Databricks adapter: Connection(session-id=01f15744-babf-1532-9797-2b5fea57f389) - Created
+[0m03:46:53.883397 [debug] [Thread-3 (]: SQL status: OK in 1.330 seconds
+[0m03:46:53.885484 [debug] [Thread-3 (]: Databricks adapter: Cursor(session-id=01f15744-babf-1532-9797-2b5fea57f389, command-id=01f15744-baca-13ad-a3ff-0e853e3670d9) - Closing
+[0m03:46:53.886854 [debug] [Thread-3 (]: Applying tags to relation None
+[0m03:46:53.888142 [debug] [Thread-3 (]: On model.smartshop_dbt.daily_revenue: Close
+[0m03:46:53.888618 [debug] [Thread-3 (]: Databricks adapter: Connection(session-id=01f15744-babf-1532-9797-2b5fea57f389) - Closing
+[0m03:46:53.981556 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'b5287d58-8ddd-49bd-b1b9-4dbbb1992e8c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1137d3650>]}
+[0m03:46:53.983152 [info ] [Thread-3 (]: 2 of 6 OK created sql view model default.daily_revenue ......................... [[32mOK[0m in 1.44s]
+[0m03:46:53.984154 [debug] [Thread-3 (]: Finished running node model.smartshop_dbt.daily_revenue
+[0m03:46:53.984831 [debug] [Thread-3 (]: Began running node model.smartshop_dbt.my_first_dbt_model
+[0m03:46:53.985685 [info ] [Thread-3 (]: 3 of 6 START sql table model default.my_first_dbt_model ........................ [RUN]
+[0m03:46:53.986606 [debug] [Thread-3 (]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=model.smartshop_dbt.my_first_dbt_model) - Creating connection
+[0m03:46:53.987084 [debug] [Thread-3 (]: Acquiring new databricks connection 'model.smartshop_dbt.my_first_dbt_model'
+[0m03:46:53.987527 [debug] [Thread-3 (]: Began compiling node model.smartshop_dbt.my_first_dbt_model
+[0m03:46:53.996524 [debug] [Thread-3 (]: Writing injected SQL for node "model.smartshop_dbt.my_first_dbt_model"
+[0m03:46:53.997544 [debug] [Thread-3 (]: Began executing node model.smartshop_dbt.my_first_dbt_model
+[0m03:46:54.015332 [debug] [Thread-3 (]: MATERIALIZING TABLE
+[0m03:46:54.035287 [debug] [Thread-3 (]: Using databricks connection "model.smartshop_dbt.my_first_dbt_model"
+[0m03:46:54.035623 [debug] [Thread-3 (]: On model.smartshop_dbt.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "1.11.8", "dbt_databricks_version": "1.12.0", "databricks_sql_connector_version": "4.1.5", "profile_name": "smartshop_dbt", "target_name": "dev", "invocation_id": "b5287d58-8ddd-49bd-b1b9-4dbbb1992e8c", "node_id": "model.smartshop_dbt.my_first_dbt_model"} */
+SELECT
+    table_catalog,
+    table_schema,
+    table_name,
+    filter_name,
+    target_columns
+  FROM `workspace`.`information_schema`.`row_filters`
+  WHERE table_catalog = 'workspace'
+    AND table_schema = 'default'
+    AND table_name = 'my_first_dbt_model'
+[0m03:46:54.035845 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m03:46:54.266172 [debug] [Thread-3 (]: Databricks adapter: Connection(session-id=01f15744-bba0-1535-84da-e67324331307) - Created
+[0m03:46:54.935847 [debug] [Thread-3 (]: SQL status: OK in 0.900 seconds
+[0m03:46:54.940992 [debug] [Thread-3 (]: Databricks adapter: Cursor(session-id=01f15744-bba0-1535-84da-e67324331307, command-id=01f15744-bbac-15ee-b2a5-0224ba5db572) - Closing
+[0m03:46:54.959438 [debug] [Thread-3 (]: Writing runtime sql for node "model.smartshop_dbt.my_first_dbt_model"
+[0m03:46:54.960346 [debug] [Thread-3 (]: Using databricks connection "model.smartshop_dbt.my_first_dbt_model"
+[0m03:46:54.960773 [debug] [Thread-3 (]: On model.smartshop_dbt.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "1.11.8", "dbt_databricks_version": "1.12.0", "databricks_sql_connector_version": "4.1.5", "profile_name": "smartshop_dbt", "target_name": "dev", "invocation_id": "b5287d58-8ddd-49bd-b1b9-4dbbb1992e8c", "node_id": "model.smartshop_dbt.my_first_dbt_model"} */
+
+  
+    
+        create or replace table `workspace`.`default`.`my_first_dbt_model`
+      
+      
+    using delta
+  
+      
+      
+      
+      
+      
+      
+      
+      
+      as
+      /*
+    Welcome to your first dbt model!
+    Did you know that you can also configure models directly within SQL files?
+    This will override configurations stated in dbt_project.yml
+
+    Try changing "table" to "view" below
+*/
+
+
+
+with source_data as (
+
+    select 1 as id
+    union all
+    select null as id
+
+)
+
+select *
+from source_data
+
+/*
+    Uncomment the line below to remove records with null `id` values
+*/
+
+-- where id is not null
+  
+[0m03:46:57.899731 [debug] [Thread-3 (]: SQL status: OK in 2.940 seconds
+[0m03:46:57.902056 [debug] [Thread-3 (]: Databricks adapter: Cursor(session-id=01f15744-bba0-1535-84da-e67324331307, command-id=01f15744-bc15-125a-a990-ac0a4bee03ad) - Closing
+[0m03:46:57.907517 [debug] [Thread-3 (]: Applying tags to relation None
+[0m03:46:57.929118 [debug] [Thread-3 (]: On model.smartshop_dbt.my_first_dbt_model: Close
+[0m03:46:57.929607 [debug] [Thread-3 (]: Databricks adapter: Connection(session-id=01f15744-bba0-1535-84da-e67324331307) - Closing
+[0m03:46:58.014131 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'b5287d58-8ddd-49bd-b1b9-4dbbb1992e8c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x113b08ad0>]}
+[0m03:46:58.015637 [info ] [Thread-3 (]: 3 of 6 OK created sql table model default.my_first_dbt_model ................... [[32mOK[0m in 4.03s]
+[0m03:46:58.017012 [debug] [Thread-3 (]: Finished running node model.smartshop_dbt.my_first_dbt_model
+[0m03:46:58.017821 [debug] [Thread-3 (]: Began running node model.smartshop_dbt.order_status_summary
+[0m03:46:58.018996 [info ] [Thread-3 (]: 4 of 6 START sql view model default.order_status_summary ....................... [RUN]
+[0m03:46:58.019937 [debug] [Thread-3 (]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=model.smartshop_dbt.order_status_summary) - Creating connection
+[0m03:46:58.020428 [debug] [Thread-3 (]: Acquiring new databricks connection 'model.smartshop_dbt.order_status_summary'
+[0m03:46:58.020882 [debug] [Thread-3 (]: Began compiling node model.smartshop_dbt.order_status_summary
+[0m03:46:58.026022 [debug] [Thread-3 (]: Writing injected SQL for node "model.smartshop_dbt.order_status_summary"
+[0m03:46:58.027840 [debug] [Thread-3 (]: Began executing node model.smartshop_dbt.order_status_summary
+[0m03:46:58.030827 [debug] [Thread-3 (]: MATERIALIZING VIEW
+[0m03:46:58.032114 [debug] [Thread-3 (]: Creating view `workspace`.`default`.`order_status_summary`
+[0m03:46:58.032960 [debug] [Thread-3 (]: Writing runtime sql for node "model.smartshop_dbt.order_status_summary"
+[0m03:46:58.033473 [debug] [Thread-3 (]: Using databricks connection "model.smartshop_dbt.order_status_summary"
+[0m03:46:58.033801 [debug] [Thread-3 (]: On model.smartshop_dbt.order_status_summary: /* {"app": "dbt", "dbt_version": "1.11.8", "dbt_databricks_version": "1.12.0", "databricks_sql_connector_version": "4.1.5", "profile_name": "smartshop_dbt", "target_name": "dev", "invocation_id": "b5287d58-8ddd-49bd-b1b9-4dbbb1992e8c", "node_id": "model.smartshop_dbt.order_status_summary"} */
+
+  
+  
+  
+  create or replace view `workspace`.`default`.`order_status_summary`
+  
+  as (
+    select
+    order_status,
+    count(*)                                    as total_orders,
+    round(count(*) * 100.0 / sum(count(*)) over(), 2) as percentage
+from workspace.default.olist_orders_dataset
+group by order_status
+order by total_orders desc
+  )
+
+[0m03:46:58.034092 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m03:46:58.282471 [debug] [Thread-3 (]: Databricks adapter: Connection(session-id=01f15744-be04-1bea-a976-9ef9439de311) - Created
+[0m03:46:59.182611 [debug] [Thread-3 (]: SQL status: OK in 1.150 seconds
+[0m03:46:59.184458 [debug] [Thread-3 (]: Databricks adapter: Cursor(session-id=01f15744-be04-1bea-a976-9ef9439de311, command-id=01f15744-be10-1223-a20f-446a6f45e02c) - Closing
+[0m03:46:59.185614 [debug] [Thread-3 (]: Applying tags to relation None
+[0m03:46:59.186943 [debug] [Thread-3 (]: On model.smartshop_dbt.order_status_summary: Close
+[0m03:46:59.187595 [debug] [Thread-3 (]: Databricks adapter: Connection(session-id=01f15744-be04-1bea-a976-9ef9439de311) - Closing
+[0m03:46:59.286782 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'b5287d58-8ddd-49bd-b1b9-4dbbb1992e8c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b419050>]}
+[0m03:46:59.288282 [info ] [Thread-3 (]: 4 of 6 OK created sql view model default.order_status_summary .................. [[32mOK[0m in 1.27s]
+[0m03:46:59.289200 [debug] [Thread-3 (]: Finished running node model.smartshop_dbt.order_status_summary
+[0m03:46:59.289805 [debug] [Thread-3 (]: Began running node model.smartshop_dbt.top_products
+[0m03:46:59.290617 [info ] [Thread-3 (]: 5 of 6 START sql view model default.top_products ............................... [RUN]
+[0m03:46:59.291540 [debug] [Thread-3 (]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=model.smartshop_dbt.top_products) - Creating connection
+[0m03:46:59.292048 [debug] [Thread-3 (]: Acquiring new databricks connection 'model.smartshop_dbt.top_products'
+[0m03:46:59.292504 [debug] [Thread-3 (]: Began compiling node model.smartshop_dbt.top_products
+[0m03:46:59.300701 [debug] [Thread-3 (]: Writing injected SQL for node "model.smartshop_dbt.top_products"
+[0m03:46:59.301525 [debug] [Thread-3 (]: Began executing node model.smartshop_dbt.top_products
+[0m03:46:59.303661 [debug] [Thread-3 (]: MATERIALIZING VIEW
+[0m03:46:59.304572 [debug] [Thread-3 (]: Creating view `workspace`.`default`.`top_products`
+[0m03:46:59.305195 [debug] [Thread-3 (]: Writing runtime sql for node "model.smartshop_dbt.top_products"
+[0m03:46:59.305806 [debug] [Thread-3 (]: Using databricks connection "model.smartshop_dbt.top_products"
+[0m03:46:59.306082 [debug] [Thread-3 (]: On model.smartshop_dbt.top_products: /* {"app": "dbt", "dbt_version": "1.11.8", "dbt_databricks_version": "1.12.0", "databricks_sql_connector_version": "4.1.5", "profile_name": "smartshop_dbt", "target_name": "dev", "invocation_id": "b5287d58-8ddd-49bd-b1b9-4dbbb1992e8c", "node_id": "model.smartshop_dbt.top_products"} */
+
+  
+  
+  
+  create or replace view `workspace`.`default`.`top_products`
+  
+  as (
+    with items as (
+    select * from workspace.default.olist_order_items_dataset
+),
+products as (
+    select * from workspace.default.olist_products_dataset
+),
+orders as (
+    select * from workspace.default.olist_orders_dataset
+)
+
+select
+    p.product_category_name          as category,
+    count(distinct i.order_id)       as total_orders,
+    round(sum(i.price), 2)           as total_revenue,
+    round(avg(i.price), 2)           as avg_price
+from items i
+join products p on i.product_id = p.product_id
+join orders o on i.order_id = o.order_id
+where o.order_status = 'delivered'
+group by p.product_category_name
+order by total_revenue desc
+limit 20
+  )
+
+[0m03:46:59.306322 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m03:46:59.553240 [debug] [Thread-3 (]: Databricks adapter: Connection(session-id=01f15744-bec5-1afa-87fd-783cc07b3334) - Created
+[0m03:47:00.824678 [debug] [Thread-3 (]: SQL status: OK in 1.520 seconds
+[0m03:47:00.826165 [debug] [Thread-3 (]: Databricks adapter: Cursor(session-id=01f15744-bec5-1afa-87fd-783cc07b3334, command-id=01f15744-bed2-14f6-941a-5d89856371cb) - Closing
+[0m03:47:00.827110 [debug] [Thread-3 (]: Applying tags to relation None
+[0m03:47:00.828121 [debug] [Thread-3 (]: On model.smartshop_dbt.top_products: Close
+[0m03:47:00.828469 [debug] [Thread-3 (]: Databricks adapter: Connection(session-id=01f15744-bec5-1afa-87fd-783cc07b3334) - Closing
+[0m03:47:00.932844 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'b5287d58-8ddd-49bd-b1b9-4dbbb1992e8c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1134bdb90>]}
+[0m03:47:00.935732 [info ] [Thread-3 (]: 5 of 6 OK created sql view model default.top_products .......................... [[32mOK[0m in 1.64s]
+[0m03:47:00.937088 [debug] [Thread-3 (]: Finished running node model.smartshop_dbt.top_products
+[0m03:47:00.937744 [debug] [Thread-3 (]: Began running node model.smartshop_dbt.my_second_dbt_model
+[0m03:47:00.938669 [info ] [Thread-3 (]: 6 of 6 START sql view model default.my_second_dbt_model ........................ [RUN]
+[0m03:47:00.939649 [debug] [Thread-3 (]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=model.smartshop_dbt.my_second_dbt_model) - Creating connection
+[0m03:47:00.940115 [debug] [Thread-3 (]: Acquiring new databricks connection 'model.smartshop_dbt.my_second_dbt_model'
+[0m03:47:00.940469 [debug] [Thread-3 (]: Began compiling node model.smartshop_dbt.my_second_dbt_model
+[0m03:47:00.946982 [debug] [Thread-3 (]: Writing injected SQL for node "model.smartshop_dbt.my_second_dbt_model"
+[0m03:47:00.948069 [debug] [Thread-3 (]: Began executing node model.smartshop_dbt.my_second_dbt_model
+[0m03:47:00.950965 [debug] [Thread-3 (]: MATERIALIZING VIEW
+[0m03:47:00.952297 [debug] [Thread-3 (]: Creating view `workspace`.`default`.`my_second_dbt_model`
+[0m03:47:00.953028 [debug] [Thread-3 (]: Writing runtime sql for node "model.smartshop_dbt.my_second_dbt_model"
+[0m03:47:00.953535 [debug] [Thread-3 (]: Using databricks connection "model.smartshop_dbt.my_second_dbt_model"
+[0m03:47:00.953825 [debug] [Thread-3 (]: On model.smartshop_dbt.my_second_dbt_model: /* {"app": "dbt", "dbt_version": "1.11.8", "dbt_databricks_version": "1.12.0", "databricks_sql_connector_version": "4.1.5", "profile_name": "smartshop_dbt", "target_name": "dev", "invocation_id": "b5287d58-8ddd-49bd-b1b9-4dbbb1992e8c", "node_id": "model.smartshop_dbt.my_second_dbt_model"} */
+
+  
+  
+  
+  create or replace view `workspace`.`default`.`my_second_dbt_model`
+  
+  as (
+    -- Use the `ref` function to select from other models
+
+select *
+from `workspace`.`default`.`my_first_dbt_model`
+where id = 1
+  )
+
+[0m03:47:00.954064 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m03:47:01.205180 [debug] [Thread-3 (]: Databricks adapter: Connection(session-id=01f15744-bfc1-1dda-8670-8ec65e9874e2) - Created
+[0m03:47:02.249005 [debug] [Thread-3 (]: SQL status: OK in 1.290 seconds
+[0m03:47:02.250723 [debug] [Thread-3 (]: Databricks adapter: Cursor(session-id=01f15744-bfc1-1dda-8670-8ec65e9874e2, command-id=01f15744-bfce-1bde-8119-30a77895b721) - Closing
+[0m03:47:02.251797 [debug] [Thread-3 (]: Applying tags to relation None
+[0m03:47:02.252963 [debug] [Thread-3 (]: On model.smartshop_dbt.my_second_dbt_model: Close
+[0m03:47:02.253390 [debug] [Thread-3 (]: Databricks adapter: Connection(session-id=01f15744-bfc1-1dda-8670-8ec65e9874e2) - Closing
+[0m03:47:02.349871 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'b5287d58-8ddd-49bd-b1b9-4dbbb1992e8c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x113b24110>]}
+[0m03:47:02.351269 [info ] [Thread-3 (]: 6 of 6 OK created sql view model default.my_second_dbt_model ................... [[32mOK[0m in 1.41s]
+[0m03:47:02.352137 [debug] [Thread-3 (]: Finished running node model.smartshop_dbt.my_second_dbt_model
+[0m03:47:02.354578 [debug] [MainThread]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=master) - Creating connection
+[0m03:47:02.355031 [debug] [MainThread]: Acquiring new databricks connection 'master'
+[0m03:47:02.355786 [info ] [MainThread]: 
+[0m03:47:02.356283 [info ] [MainThread]: Finished running 1 table model, 5 view models in 0 hours 0 minutes and 13.49 seconds (13.49s).
+[0m03:47:02.357812 [debug] [MainThread]: Command end result
+[0m03:47:02.399831 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/prasadpatil/Downloads/Smartshop Analytical Platform/smartshop_dbt/target/manifest.json
+[0m03:47:02.401723 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/prasadpatil/Downloads/Smartshop Analytical Platform/smartshop_dbt/target/semantic_manifest.json
+[0m03:47:02.405525 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/prasadpatil/Downloads/Smartshop Analytical Platform/smartshop_dbt/target/run_results.json
+[0m03:47:02.405683 [info ] [MainThread]: 
+[0m03:47:02.405886 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m03:47:02.406029 [info ] [MainThread]: 
+[0m03:47:02.406205 [info ] [MainThread]: Done. PASS=6 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=6
+[0m03:47:02.409727 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 14.936523, "process_in_blocks": "0", "process_kernel_time": 0.363805, "process_mem_max_rss": "246431744", "process_out_blocks": "0", "process_user_time": 2.116359}
+[0m03:47:02.410339 [debug] [MainThread]: Command `dbt run` succeeded at 03:47:02.410283 after 14.94 seconds
+[0m03:47:02.411161 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b4fcfd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b60ad90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b1c1b90>]}
+[0m03:47:02.411336 [debug] [MainThread]: Flushing usage events
+[0m03:47:02.644880 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m21:12:58.126427 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b5e2990>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b685290>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b5cad50>]}
+
+
+============================== 21:12:58.129275 | 379b2d3b-2d5d-4a1a-8873-02fdad50c165 ==============================
+[0m21:12:58.129275 [info ] [MainThread]: Running with dbt=1.11.8
+[0m21:12:58.129594 [debug] [MainThread]: running dbt with arguments {'use_colors': 'True', 'version_check': 'True', 'log_cache_events': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'log_path': '/Users/prasadpatil/Downloads/Smartshop Analytical Platform/smartshop_dbt/logs', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True', 'warn_error': 'None', 'cache_selected_only': 'False', 'partial_parse': 'True', 'printer_width': '80', 'profiles_dir': '/Users/prasadpatil/.dbt', 'introspect': 'True', 'write_json': 'True', 'empty': 'False', 'use_experimental_parser': 'False', 'log_format': 'default', 'no_print': 'None', 'target_path': 'None', 'indirect_selection': 'eager', 'invocation_command': 'dbt run --select top_products', 'debug': 'False', 'fail_fast': 'False', 'quiet': 'False'}
+[0m21:12:58.581932 [debug] [MainThread]: Spark adapter: Setting pyhive.hive logging to ERROR
+[0m21:12:58.582186 [debug] [MainThread]: Spark adapter: Setting thrift.transport logging to ERROR
+[0m21:12:58.582313 [debug] [MainThread]: Spark adapter: Setting thrift.protocol logging to ERROR
+[0m21:12:59.592849 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '379b2d3b-2d5d-4a1a-8873-02fdad50c165', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110583850>]}
+[0m21:12:59.657505 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '379b2d3b-2d5d-4a1a-8873-02fdad50c165', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b72ce50>]}
+[0m21:12:59.657864 [info ] [MainThread]: Registered adapter: databricks=1.12.0
+[0m21:12:59.743386 [debug] [MainThread]: checksum: 7d524ac048c2100769df89d592e662e060a73ca564e31bd9c2a37efdfe8d8ab6, vars: {}, profile: , target: , version: 1.11.8
+[0m21:12:59.819204 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m21:12:59.819474 [debug] [MainThread]: Partial parsing: updated file: smartshop_dbt://models/smartshop/top_products.sql
+[0m21:12:59.933200 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '379b2d3b-2d5d-4a1a-8873-02fdad50c165', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1136bf7d0>]}
+[0m21:12:59.975691 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/prasadpatil/Downloads/Smartshop Analytical Platform/smartshop_dbt/target/manifest.json
+[0m21:12:59.977369 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/prasadpatil/Downloads/Smartshop Analytical Platform/smartshop_dbt/target/semantic_manifest.json
+[0m21:12:59.984738 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '379b2d3b-2d5d-4a1a-8873-02fdad50c165', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x113aec590>]}
+[0m21:12:59.984935 [info ] [MainThread]: Found 6 models, 4 data tests, 758 macros
+[0m21:12:59.985069 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '379b2d3b-2d5d-4a1a-8873-02fdad50c165', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x113cbafd0>]}
+[0m21:12:59.985704 [info ] [MainThread]: 
+[0m21:12:59.985844 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m21:12:59.985948 [info ] [MainThread]: 
+[0m21:12:59.986187 [debug] [MainThread]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=master) - Creating connection
+[0m21:12:59.986309 [debug] [MainThread]: Acquiring new databricks connection 'master'
+[0m21:12:59.986664 [debug] [ThreadPool]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=list_workspace) - Creating connection
+[0m21:12:59.986815 [debug] [ThreadPool]: Acquiring new databricks connection 'list_workspace'
+[0m21:12:59.991966 [debug] [ThreadPool]: Using databricks connection "list_workspace"
+[0m21:12:59.992111 [debug] [ThreadPool]: On list_workspace: /* {"app": "dbt", "dbt_version": "1.11.8", "dbt_databricks_version": "1.12.0", "databricks_sql_connector_version": "4.1.5", "profile_name": "smartshop_dbt", "target_name": "dev", "invocation_id": "379b2d3b-2d5d-4a1a-8873-02fdad50c165", "connection_name": "list_workspace"} */
+
+    
+
+  SHOW SCHEMAS IN `workspace`
+
+
+  
+[0m21:12:59.992229 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m21:13:00.746817 [debug] [ThreadPool]: Databricks adapter: Connection(session-id=01f157d6-df59-192e-a12a-36cd58607a8f) - Created
+[0m21:13:01.600134 [debug] [ThreadPool]: SQL status: OK in 1.610 seconds
+[0m21:13:01.617435 [debug] [ThreadPool]: Databricks adapter: Cursor(session-id=01f157d6-df59-192e-a12a-36cd58607a8f, command-id=01f157d6-df6e-1001-8e52-bd66a205c449) - Closing
+[0m21:13:01.618512 [debug] [ThreadPool]: On list_workspace: Close
+[0m21:13:01.618771 [debug] [ThreadPool]: Databricks adapter: Connection(session-id=01f157d6-df59-192e-a12a-36cd58607a8f) - Closing
+[0m21:13:01.725980 [debug] [ThreadPool]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=list_workspace_default) - Creating connection
+[0m21:13:01.726319 [debug] [ThreadPool]: Acquiring new databricks connection 'list_workspace_default'
+[0m21:13:01.732939 [debug] [ThreadPool]: Using databricks connection "list_workspace_default"
+[0m21:13:01.733366 [debug] [ThreadPool]: On list_workspace_default: /* {"app": "dbt", "dbt_version": "1.11.8", "dbt_databricks_version": "1.12.0", "databricks_sql_connector_version": "4.1.5", "profile_name": "smartshop_dbt", "target_name": "dev", "invocation_id": "379b2d3b-2d5d-4a1a-8873-02fdad50c165", "connection_name": "list_workspace_default"} */
+
+    
+SELECT
+  table_name,
+  if(table_type IN ('EXTERNAL', 'MANAGED', 'MANAGED_SHALLOW_CLONE', 'EXTERNAL_SHALLOW_CLONE'), 'table', lower(table_type)) AS table_type,
+  lower(data_source_format) AS file_format,
+  table_owner,
+  if(
+    table_type IN (
+      'EXTERNAL',
+      'MANAGED',
+      'MANAGED_SHALLOW_CLONE',
+      'EXTERNAL_SHALLOW_CLONE'
+    ),
+    lower(table_type),
+    NULL
+  ) AS databricks_table_type
+FROM `system`.`information_schema`.`tables`
+WHERE table_catalog = 'workspace'
+  AND table_schema = 'default'
+
+  
+[0m21:13:01.733614 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m21:13:02.001674 [debug] [ThreadPool]: Databricks adapter: Connection(session-id=01f157d6-e01a-1f9e-80ec-747689cfa753) - Created
+[0m21:13:03.466822 [debug] [ThreadPool]: SQL status: OK in 1.730 seconds
+[0m21:13:03.472237 [debug] [ThreadPool]: Databricks adapter: Cursor(session-id=01f157d6-e01a-1f9e-80ec-747689cfa753, command-id=01f157d6-e027-1b71-9620-eec7e8618a7b) - Closing
+[0m21:13:03.473669 [debug] [ThreadPool]: On list_workspace_default: Close
+[0m21:13:03.474133 [debug] [ThreadPool]: Databricks adapter: Connection(session-id=01f157d6-e01a-1f9e-80ec-747689cfa753) - Closing
+[0m21:13:03.565060 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '379b2d3b-2d5d-4a1a-8873-02fdad50c165', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x113e98090>]}
+[0m21:13:03.570432 [debug] [Thread-3 (]: Began running node model.smartshop_dbt.top_products
+[0m21:13:03.571388 [info ] [Thread-3 (]: 1 of 1 START sql view model default.top_products ............................... [RUN]
+[0m21:13:03.572193 [debug] [Thread-3 (]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=model.smartshop_dbt.top_products) - Creating connection
+[0m21:13:03.572578 [debug] [Thread-3 (]: Acquiring new databricks connection 'model.smartshop_dbt.top_products'
+[0m21:13:03.572918 [debug] [Thread-3 (]: Began compiling node model.smartshop_dbt.top_products
+[0m21:13:03.583936 [debug] [Thread-3 (]: Writing injected SQL for node "model.smartshop_dbt.top_products"
+[0m21:13:03.585016 [debug] [Thread-3 (]: Began executing node model.smartshop_dbt.top_products
+[0m21:13:03.598861 [debug] [Thread-3 (]: MATERIALIZING VIEW
+[0m21:13:03.612650 [debug] [Thread-3 (]: Creating view `workspace`.`default`.`top_products`
+[0m21:13:03.619342 [debug] [Thread-3 (]: Writing runtime sql for node "model.smartshop_dbt.top_products"
+[0m21:13:03.619746 [debug] [Thread-3 (]: Using databricks connection "model.smartshop_dbt.top_products"
+[0m21:13:03.619990 [debug] [Thread-3 (]: On model.smartshop_dbt.top_products: /* {"app": "dbt", "dbt_version": "1.11.8", "dbt_databricks_version": "1.12.0", "databricks_sql_connector_version": "4.1.5", "profile_name": "smartshop_dbt", "target_name": "dev", "invocation_id": "379b2d3b-2d5d-4a1a-8873-02fdad50c165", "node_id": "model.smartshop_dbt.top_products"} */
+
+  
+  
+  
+  create or replace view `workspace`.`default`.`top_products`
+  
+  as (
+    with items as (
+    select * from workspace.default.olist_order_items_dataset
+),
+products as (
+    select * from workspace.default.olist_products_dataset
+),
+orders as (
+    select * from workspace.default.olist_orders_dataset
+),
+translations as (
+    select * from workspace.default.product_category_name_translation
+)
+
+select
+    coalesce(t.product_category_name_english,
+             p.product_category_name) as category,
+    count(distinct i.order_id)        as total_orders,
+    round(sum(i.price), 2)            as total_revenue,
+    round(avg(i.price), 2)            as avg_price
+from items i
+join products p on i.product_id = p.product_id
+join orders o on i.order_id = o.order_id
+left join translations t
+       on p.product_category_name = t.product_category_name
+where o.order_status = 'delivered'
+group by coalesce(t.product_category_name_english,
+                  p.product_category_name)
+order by total_revenue desc
+limit 20
+  )
+
+[0m21:13:03.620196 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m21:13:03.880217 [debug] [Thread-3 (]: Databricks adapter: Connection(session-id=01f157d6-e139-15ae-bef9-f5a55715d8da) - Created
+[0m21:13:06.094734 [debug] [Thread-3 (]: SQL status: OK in 2.470 seconds
+[0m21:13:06.096557 [debug] [Thread-3 (]: Databricks adapter: Cursor(session-id=01f157d6-e139-15ae-bef9-f5a55715d8da, command-id=01f157d6-e146-1a0a-a054-f577bc55bd50) - Closing
+[0m21:13:06.112000 [debug] [Thread-3 (]: Applying tags to relation None
+[0m21:13:06.115984 [debug] [Thread-3 (]: On model.smartshop_dbt.top_products: Close
+[0m21:13:06.116342 [debug] [Thread-3 (]: Databricks adapter: Connection(session-id=01f157d6-e139-15ae-bef9-f5a55715d8da) - Closing
+[0m21:13:06.230394 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '379b2d3b-2d5d-4a1a-8873-02fdad50c165', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x113ced610>]}
+[0m21:13:06.231742 [info ] [Thread-3 (]: 1 of 1 OK created sql view model default.top_products .......................... [[32mOK[0m in 2.66s]
+[0m21:13:06.233046 [debug] [Thread-3 (]: Finished running node model.smartshop_dbt.top_products
+[0m21:13:06.235190 [debug] [MainThread]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=master) - Creating connection
+[0m21:13:06.235649 [debug] [MainThread]: Acquiring new databricks connection 'master'
+[0m21:13:06.236274 [info ] [MainThread]: 
+[0m21:13:06.236931 [info ] [MainThread]: Finished running 1 view model in 0 hours 0 minutes and 6.25 seconds (6.25s).
+[0m21:13:06.237858 [debug] [MainThread]: Command end result
+[0m21:13:06.277932 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/prasadpatil/Downloads/Smartshop Analytical Platform/smartshop_dbt/target/manifest.json
+[0m21:13:06.279523 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/prasadpatil/Downloads/Smartshop Analytical Platform/smartshop_dbt/target/semantic_manifest.json
+[0m21:13:06.282908 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/prasadpatil/Downloads/Smartshop Analytical Platform/smartshop_dbt/target/run_results.json
+[0m21:13:06.283063 [info ] [MainThread]: 
+[0m21:13:06.283280 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m21:13:06.283421 [info ] [MainThread]: 
+[0m21:13:06.283599 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=1
+[0m21:13:06.287080 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 8.198989, "process_in_blocks": "0", "process_kernel_time": 0.373603, "process_mem_max_rss": "253689856", "process_out_blocks": "0", "process_user_time": 1.843484}
+[0m21:13:06.287397 [debug] [MainThread]: Command `dbt run` succeeded at 21:13:06.287344 after 8.20 seconds
+[0m21:13:06.287639 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10239a550>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b793550>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b5e2c90>]}
+[0m21:13:06.287817 [debug] [MainThread]: Flushing usage events
+[0m21:13:06.438054 [debug] [MainThread]: An error was encountered while trying to flush usage events

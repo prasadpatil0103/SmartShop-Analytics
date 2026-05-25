@@ -1,0 +1,5 @@
+kafka-python==2.3.1
+pyspark==3.5.3
+delta-spark==3.2.0
+dbt-core==1.11.8
+dbt-databricks==1.12.0
